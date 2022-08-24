@@ -1,0 +1,361 @@
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color:white; */
+    background-color:rgb(245,245,245) ;
+}
+#upper{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 150px;
+}
+#upper>#left
+{
+    width: 13%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+#upper>#middle
+{
+    width: 74%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+#upper>#right
+{
+    width: 13%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+#middle>#top{
+width: 97%;
+height: 70px;
+border: 1px solid red;
+margin: auto;
+margin-top: 90px;
+}
+#mid{
+    width: 97%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    background-color: white;
+}
+#mid>#LO{
+    width: 70%;
+    height: 800px;
+    /* border: 1px solid teal; */
+    background-color: white;
+}
+#mid>#RO{
+    width: 30%;
+    height: 800px;
+    border: 1px solid teal;
+    background-color: white;
+}
+#LO1h2
+{
+    margin-top: 10px;
+    
+    padding-left: 10px;
+    color: rgb(40,40,40);
+    font-size: 24px;
+    font-weight: 100;
+    background-color: white;
+
+}
+#LO1P
+{
+    margin-top: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: grey;
+    background-color: white;
+
+}
+#LO1IMG
+{
+    margin-top: 10px;
+    
+
+}
+#ROIMG1>img{
+    width: 100%;
+
+}
+#ROIMG2>img{
+    width: 100%;
+    margin-top: 25px;
+}
+#ROIMG3>img{
+    width: 100%;
+    margin-top: 25px;
+}
+#LO2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 20px;
+    gap: 20px 0px;
+    /* background-color: white; */
+}
+#LO2>div{
+    display: flex;
+    background-color:white;
+    
+}
+#div2>#name{
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 5px;
+    color: rgb(46, 46, 46);
+    background-color: white;
+}
+#div2>#p{
+    font-size: 17px;
+    margin-top: 5px;
+    padding-left: 5px;
+    color:gray;
+    background-color: white;
+}
+#adi1{
+    width: 60%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+}
+#opinion{
+    width: 73%;
+    height: auto;
+    /* border: 1px solid teal; */
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+}
+#opinion>#line{
+    border-bottom: 1px solid black;
+    width: 750px;
+}
+#opinion>#opinionh2{
+    font-size: 20px;
+    color:rgb(19,59,90) ;
+}
+#opinion>#opinionp{
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+    margin-top: 7px;
+}
+#opi{
+    width: 73%;
+    height: 450px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+}
+#opi>#opi1{
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid teal; */
+    display: flex;
+}
+#opi>#opi2{
+    width: 30%;
+    height: 400px;
+    /* border: 1px solid teal; */
+}
+#opi1>#opi11{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+#opi1>#opi12{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-left: 3%;
+    background-color: white;
+}
+#opi1>#opi13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-left: 3%;
+    background-color: white;
+}
+#opi11>img{
+    width: 100%;
+}
+#opi12>img{
+    width: 100%;
+}
+#opi13>img{
+    width: 100%;
+}
+.opi121{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(19,59,90);
+    background-color: white;
+}
+.opip{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+.opipp{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: gray;
+    background-color: white;
+}
+.opih4{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+    background-color: white;
+}
+
+#opi21{
+    width: 100%;
+    height: 53%;
+    /* border: 1px solid red; */
+}
+#opi22{
+    width: 100%;
+    height: 53%;
+    /* border: 1px solid red; */
+}
+#opi22
+>img{
+    width: 100%;
+    
+}
+#opi21{
+    background-color: rgb(19,59,90);
+}
+#opi21>h2{
+    color: white;
+    background-color:rgb(19,59,90) ;
+    font-size: 19px;
+    padding-left: 10px;
+    /* margin-top: 5px; */
+}
+#opi21>p{
+    color: white;
+    background-color:rgb(19,59,90) ;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+#market{
+    width: 73%;
+    height: auto;
+    /* border: 1px solid teal; */
+    margin: auto;
+    display: flex;
+    /* margin-top: 10px; */
+}
+#market>#marketLine{
+    border-bottom: 1px solid black;
+    width: 850px;
+}
+#market>#marketh2{
+    font-size: 20px;
+    color:rgb(19,59,90) ;
+}
+#market>#marketp{
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+    margin-top: 7px;
+}
+#mark{
+    width: 73%;
+    height: 450px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+}
+#mark>#mark1{
+    width: 70%;
+    height: 400px;
+    border: 1px solid teal;
+    display: flex;
+}
+#mark>#mark2{
+    width: 30%;
+    height: 400px;
+    border: 1px solid teal;
+}
+#mark1>#mark11{
+    width: 30%;
+    height: auto;
+    border: 1px solid red;
+    background-color: white;
+}
+#mark1>#mark12{
+    width: 30%;
+    height: auto;
+    border: 1px solid red;
+    background-color: white;
+    margin-left: 3%;
+}
+#mark1>#mark13{
+    width: 30%;
+    height: auto;
+    border: 1px solid red;
+    background-color: white;
+    margin-left: 3%;
+}
+.markimg{
+    width:100%
+}
+.markh2{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:rgb(19,59,90) ;
+    background-color: white;
+    font-weight: 600;
+}
+.markp1{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+.markp2{
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 600;
+}
+.markp3{
+    padding-left: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+
+
+
+
+
+
