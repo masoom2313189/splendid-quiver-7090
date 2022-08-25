@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu : Breaking news, india</title>
+    <script src="https://kit.fontawesome.com/1bff261df8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/index.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- geo map -->
+    <script type="text/javascript">
+
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: Because this chart requires geocoding, you'll need mapsApiKey.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+        ['State Code', 'State', 'Result'],
+        ['IN-AN','Andaman and Nicobar Islands',9],
+['IN-AP','Andhra Pradesh',10],
+['IN-AR','Arunachal Pradesh',34],
+['IN-AS','Assam',3],
+['IN-BR','Bihar',50],
+['IN-CH','Chandigarh',115],
+['IN-CT','Chhattisgarh',304],
+['IN-DN','Dadra and Nagar Haveli',34],
+['IN-DD','Daman and Diu',94],
+['IN-DL','Delhi',3324],
+['IN-GA','Goa',716],
+['IN-GJ','Gujarat',894],
+['IN-HR','Haryana',1114],
+['IN-HP','Himachal Pradesh',1254],
+['IN-JK','Jammu and Kashmir',374],
+['IN-JH','Jharkhand',3402],
+['IN-KA','Karnataka',644],
+['IN-KL','Kerala',3454],
+['IN-LA','Ladakh',454],
+['IN-LD','Lakshadweep',745],
+['IN-MP','Madhya Pradesh',454],
+['IN-MH','Maharashtra',544],
+['IN-MN','Manipur',654],
+['IN-ML','Meghalaya',154],
+['IN-MZ','Mizoram',54],
+['IN-NL','Nagaland',7641],
+['IN-OR','Odisha',1545],
+['IN-PY','Puducherry',5745],
+['IN-PB','Punjab',4541],
+['IN-RJ','Rajasthan',4857],
+['IN-SK','Sikkim',345],
+['IN-TN','Tamil Nadu',4557],
+['IN-TG','Telangana',5422],
+['IN-TR','Tripura',5456],
+['IN-UP','Uttar Pradesh',788],
+['IN-UT','Uttarakhand',154],
+['IN-WB','West Bengal',5474]]);
+
+var options = {
+          region:'IN',
+          resolution: 'provinces',
+          colorAxis: {colors: ['#ffeb3b', '#ff5722']}
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+        chart.draw(data, options);
+      };
+    </script>
+>
+
+
+
+</head>
+
+<body>
+    <div id="Body">
+        <div id="add_left" class="add">
+            <img src="https://s0.2mdn.net/simgad/10002112593280643179" alt="">
+        </div>
+
+
+        <div id="container">
+            <!-- container_mini_Nav is the tranding news points -->
+            <div id="container_mini_Nav">
+                <ul>
+                    <li>TRENDING TODAY</li>
+                    <li>MONKEYPOX</li>
+                    <li>CORONAVIRUS</li>
+                    <li>INDIA AT 75</li>
+                </ul>
+            </div>
+
+            <!-- this contains actual data of website -->
+            <div id="container_workFlow">
+                <div id="workflow_part_1">
+                    <div id="container_workflow_Breaking">
+                        <div id="part_1_left">
+
+                            <div id="part_1_left_breaking_big">
+                                <!-- main breaking news & main div in landing page -->
+                                <!-- i am appending all the news in big div -->
+                            </div>
+
+                            <div id="part_1_left_breaking_mini">
+                                <!-- news in small box -->
+                                <!-- i am appending all the news in small div -->
+                            </div>
+
+                        </div>
+                        <div id="part_1_right">
+                            <!-- more news div in small boxes -->
+                            <!-- appensing small div here -->
+                        </div>
+                    </div>
+
+                    <div id="container_workflow_slider"></div>
+                    <div id="container_workflow_mumbai">
+                        <!-- appending two more mini news div -->
+                    </div>
+                    <div id="coronavirus">
+                        <div id="coronavirus_heading">
+                            <div><h2>COVID-19 TRACKER</h2></div>
+                            <div><h2>SEE ALL REPORTS</h2></div>
+                        </div>
+                        <div id="coronavirus_Data">
+                            <div id="geochart-colors">
+                                    <!-- geomap ofindia -->
+                            </div>
+                             <div id="barchart_color">
+                                <h2>Vaccination Progress</h2>
+                                <div class="mini_data">
+                                    <div class="mini_data_topic">
+                                        <h2>Fully vaccinated</h2>
+                                        <h2>68.5%</h2>
+                                    </div>
+                                    <div class="miniData_chart">
+                                        <div id="Fully_vaccinated"></div>
+                                    </div>
+                                </div>                               
+                                <div class="mini_data">
+                                    <div class="mini_data_topic">
+                                        <h2>At least one dose*</h2>
+                                        <h2>74.6%</h2>
+                                    </div>
+                                    <div class="miniData_chart">
+                                        <div id="At_least_one_dose"></div>
+                                    </div>
+                                    <h4>*as a % estimated full population, 2021</h4>
+                                </div>
+                            </div> 
+                            <div id="barchart_color_2">
+                                <div class="mini_data">
+                                    <div class="mini_data_topic">
+                                        <h2>Age 18+</h2>
+                                        <h2>194</h2>
+                                    </div>
+                                    <div class="miniData_chart">
+                                        <div id="age18"></div>
+                                    </div>
+                                </div>
+                                <div class="mini_data">
+                                    <div class="mini_data_topic">
+                                        <h2>Age 45+</h2>
+                                        <h2>204</h2>
+                                    </div>
+                                    <div class="miniData_chart">
+                                        <div id="age45"></div>
+                                    </div>
+                                </div>
+                                <div class="mini_data">
+                                    <div class="mini_data_topic">
+                                        <h2>Age 60+</h2>
+                                        <h2>209</h2>
+                                    </div>
+                                    <div class="miniData_chart">
+                                        <div id="age60"></div>
+                                    </div>
+                                    <h4>Dose per 100 people</h4>
+                                </div>
+
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- showing adds -->
+                <div id="workflow_part_2">
+                    <!-- appending all addes in part 2 of work flow  -->
+                </div>
+            </div>
+
+
+            <!-- top picks -->
+
+            <div id="top_sliding">
+                <div id="topPicks">
+                    <h1>Top Pickss <span>1/10</span></h1>
+                    <div id="border_only"></div>
+                    <div id="topPicks_left"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div id="topPicks_right"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <!-- appending data from api -->
+            </div>
+            <div id="top_add"></div>
+            <div id="topPics_News"></div>
+
+
+
+
+        <!-- container DIV -->    
+        </div>
+
+
+
+        <div id="add_right" class="add">
+            <img src="https://s0.2mdn.net/simgad/10002112593280643179" alt="">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+<script src="./script/index.js"></script>
