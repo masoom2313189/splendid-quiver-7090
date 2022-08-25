@@ -60,3 +60,77 @@ let append=(data)=>
 }
 append(data)
 console.log(data)
+
+let dataArt=[
+    {
+        heading:"NDTV surges to 14-year high on Adani move",
+        para:"New Delhi Television's (NDTV) shares surged far beyond the price Adani Group said it",
+     },
+     {
+        heading:"No evidence Indian firms circumventing sanctions on Russia: U.S. official",
+        para:"U.S. Deputy Secretary of Treasury Adeyemo says firms honouring sanctions",
+     },
+     {
+        heading:"Aurobindo Pharma arm gets U.S. FDA nod for contraceptive",
+        para:"HYDERABAD",
+     },
+     {
+        heading:"RBI lifts curbs on American Express after compliance with data rules",
+        para:"Mumbai",
+     },
+     {
+        heading:"Business Matters | Senior care in India: Why are corporates showing interest?",
+        para:"A video on why corporates are showing interest in senior care",
+     },
+     {
+        heading:"Mercedes-Benz to unveil 3 luxury EVs in 4 months",
+        para:"Targets 25% sales from EVs in India in 5 years",
+     },
+     {
+        heading:"ONGC rebids KG gas, seeks $15 price",
+        para:"The firm asked users to quote a premium they are willing to pay over and above the reserve gas price of 14% of Brent crude",
+     },
+     {
+        heading:"Maruti recalls 166 Dzire Tour S units to replace defective airbag control unit",
+        para:"The faulty airbag control unit, in rare cases, might result in",
+     },
+     {
+        heading:"Royal Enfield unveils Hunter 350 from ₹1.5 lakh",
+        para:"CHENNAI",
+     },
+     {
+        heading:"TVS Motor picks up 48.27% stake in Narain Karthikeyan’s start-up DriveX",
+        para:"CHENNAI",
+     },
+     {
+        heading:"Rupee falls 4 paise in early trade",
+        para:"The Indian currency pened at 79.84 against the dollar, then fell to 79.87.",
+     },
+     {
+        heading:"Repco Home Finance eyes 10-11% growth in loan book during FY23",
+        para:"Eyes loan book of ₹13,000 crore",
+     }
+    
+
+]
+
+let appendArt=(dataArt)=>
+{
+    let box=document.getElementById("art13")
+    box.innerHTML=null
+
+    dataArt.forEach((ele)=>{
+        let div=document.createElement("div")
+        div.setAttribute("class","box1")
+        let p1=document.createElement("p");
+        p1.innerText=ele.heading;
+        p1.setAttribute("class","heading")
+        let p=document.createElement("p");
+        p.innerText=ele.para;
+        p.setAttribute("class","para")
+
+        div.append(p1,p);
+        box.append(div)
+    })
+}
+appendArt(dataArt)
