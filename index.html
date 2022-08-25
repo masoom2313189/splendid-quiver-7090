@@ -12,66 +12,66 @@
     <!-- geo map -->
     <script type="text/javascript">
 
-      google.charts.load('current', {
-        'packages':['geochart'],
-        // Note: Because this chart requires geocoding, you'll need mapsApiKey.
-        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
-      });
-      google.charts.setOnLoadCallback(drawRegionsMap);
+        google.charts.load('current', {
+            'packages': ['geochart'],
+            // Note: Because this chart requires geocoding, you'll need mapsApiKey.
+            // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+            'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+        });
+        google.charts.setOnLoadCallback(drawRegionsMap);
 
-      function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-        ['State Code', 'State', 'Result'],
-        ['IN-AN','Andaman and Nicobar Islands',9],
-['IN-AP','Andhra Pradesh',10],
-['IN-AR','Arunachal Pradesh',34],
-['IN-AS','Assam',3],
-['IN-BR','Bihar',50],
-['IN-CH','Chandigarh',115],
-['IN-CT','Chhattisgarh',304],
-['IN-DN','Dadra and Nagar Haveli',34],
-['IN-DD','Daman and Diu',94],
-['IN-DL','Delhi',3324],
-['IN-GA','Goa',716],
-['IN-GJ','Gujarat',894],
-['IN-HR','Haryana',1114],
-['IN-HP','Himachal Pradesh',1254],
-['IN-JK','Jammu and Kashmir',374],
-['IN-JH','Jharkhand',3402],
-['IN-KA','Karnataka',644],
-['IN-KL','Kerala',3454],
-['IN-LA','Ladakh',454],
-['IN-LD','Lakshadweep',745],
-['IN-MP','Madhya Pradesh',454],
-['IN-MH','Maharashtra',544],
-['IN-MN','Manipur',654],
-['IN-ML','Meghalaya',154],
-['IN-MZ','Mizoram',54],
-['IN-NL','Nagaland',7641],
-['IN-OR','Odisha',1545],
-['IN-PY','Puducherry',5745],
-['IN-PB','Punjab',4541],
-['IN-RJ','Rajasthan',4857],
-['IN-SK','Sikkim',345],
-['IN-TN','Tamil Nadu',4557],
-['IN-TG','Telangana',5422],
-['IN-TR','Tripura',5456],
-['IN-UP','Uttar Pradesh',788],
-['IN-UT','Uttarakhand',154],
-['IN-WB','West Bengal',5474]]);
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['State Code', 'State', 'Result'],
+                ['IN-AN', 'Andaman and Nicobar Islands', 9],
+                ['IN-AP', 'Andhra Pradesh', 10],
+                ['IN-AR', 'Arunachal Pradesh', 34],
+                ['IN-AS', 'Assam', 3],
+                ['IN-BR', 'Bihar', 50],
+                ['IN-CH', 'Chandigarh', 115],
+                ['IN-CT', 'Chhattisgarh', 304],
+                ['IN-DN', 'Dadra and Nagar Haveli', 34],
+                ['IN-DD', 'Daman and Diu', 94],
+                ['IN-DL', 'Delhi', 3324],
+                ['IN-GA', 'Goa', 716],
+                ['IN-GJ', 'Gujarat', 894],
+                ['IN-HR', 'Haryana', 1114],
+                ['IN-HP', 'Himachal Pradesh', 1254],
+                ['IN-JK', 'Jammu and Kashmir', 374],
+                ['IN-JH', 'Jharkhand', 3402],
+                ['IN-KA', 'Karnataka', 644],
+                ['IN-KL', 'Kerala', 3454],
+                ['IN-LA', 'Ladakh', 454],
+                ['IN-LD', 'Lakshadweep', 745],
+                ['IN-MP', 'Madhya Pradesh', 454],
+                ['IN-MH', 'Maharashtra', 544],
+                ['IN-MN', 'Manipur', 654],
+                ['IN-ML', 'Meghalaya', 154],
+                ['IN-MZ', 'Mizoram', 54],
+                ['IN-NL', 'Nagaland', 7641],
+                ['IN-OR', 'Odisha', 1545],
+                ['IN-PY', 'Puducherry', 5745],
+                ['IN-PB', 'Punjab', 4541],
+                ['IN-RJ', 'Rajasthan', 4857],
+                ['IN-SK', 'Sikkim', 345],
+                ['IN-TN', 'Tamil Nadu', 4557],
+                ['IN-TG', 'Telangana', 5422],
+                ['IN-TR', 'Tripura', 5456],
+                ['IN-UP', 'Uttar Pradesh', 788],
+                ['IN-UT', 'Uttarakhand', 154],
+                ['IN-WB', 'West Bengal', 5474]]);
 
-var options = {
-          region:'IN',
-          resolution: 'provinces',
-          colorAxis: {colors: ['#ffeb3b', '#ff5722']}
+            var options = {
+                region: 'IN',
+                resolution: 'provinces',
+                colorAxis: { colors: ['#ffeb3b', '#ff5722'] }
+            };
+
+            var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+            chart.draw(data, options);
         };
-
-        var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
-        chart.draw(data, options);
-      };
     </script>
->
+    >
 
 
 
@@ -118,20 +118,26 @@ var options = {
                         </div>
                     </div>
 
-                    <div id="container_workflow_slider"></div>
+                    <div id="container_workflow_slider">
+                        <!-- SLIDING DATA REMAINS -->
+                    </div>
                     <div id="container_workflow_mumbai">
                         <!-- appending two more mini news div -->
                     </div>
                     <div id="coronavirus">
                         <div id="coronavirus_heading">
-                            <div><h2>COVID-19 TRACKER</h2></div>
-                            <div><h2>SEE ALL REPORTS</h2></div>
+                            <div>
+                                <h2>COVID-19 TRACKER</h2>
+                            </div>
+                            <div>
+                                <h2>SEE ALL REPORTS</h2>
+                            </div>
                         </div>
                         <div id="coronavirus_Data">
                             <div id="geochart-colors">
-                                    <!-- geomap ofindia -->
+                                <!-- geomap ofindia -->
                             </div>
-                             <div id="barchart_color">
+                            <div id="barchart_color">
                                 <h2>Vaccination Progress</h2>
                                 <div class="mini_data">
                                     <div class="mini_data_topic">
@@ -141,7 +147,7 @@ var options = {
                                     <div class="miniData_chart">
                                         <div id="Fully_vaccinated"></div>
                                     </div>
-                                </div>                               
+                                </div>
                                 <div class="mini_data">
                                     <div class="mini_data_topic">
                                         <h2>At least one dose*</h2>
@@ -152,7 +158,7 @@ var options = {
                                     </div>
                                     <h4>*as a % estimated full population, 2021</h4>
                                 </div>
-                            </div> 
+                            </div>
                             <div id="barchart_color_2">
                                 <div class="mini_data">
                                     <div class="mini_data_topic">
@@ -184,7 +190,7 @@ var options = {
                                 </div>
 
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -202,20 +208,203 @@ var options = {
 
             <div id="top_sliding">
                 <div id="topPicks">
-                    <h1>Top Pickss <span>1/10</span></h1>
+                    <h1>Top Picks <span>1/10</span></h1>
                     <div id="border_only"></div>
                     <div id="topPicks_left"><i class="fa-solid fa-chevron-left"></i></div>
                     <div id="topPicks_right"><i class="fa-solid fa-chevron-right"></i></div>
                 </div>
-                <!-- appending data from api -->
+
+                <div id="top_sliding_news">
+                    <!-- small box news -->
+                    <!-- appending data from api -->
+                </div>
+                <div id="top_add">
+                    <img src="https://s0.2mdn.net/simgad/5356890396862228147" alt="">
+                </div>
+                <div id="topPics_News">
+                    <!-- small box news -->
+                    <!-- appending data from api -->
+                </div>
+
             </div>
-            <div id="top_add"></div>
-            <div id="topPics_News"></div>
+
+            <!-- opinion -->
+
+            <div id="opinion">
+                <div id="opinion_head">
+                    <h1>Opinion</h1>
+                    <div id="opinion_boder_only"></div>
+                    <h5>SEE ALL</h5>
+                </div>
+                <div id="opinion_container">
+                    <div id="let_opinion">
+                        <div id="let_opinion_top">
+                            <div> <img src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="">
+                            </div>
+                            <div class="opinion_h3">
+                                <h3>EDITORIAL</h3>
+                                <h4>Family matters: On the Congress and the Gandhis</h4>
+                            </div>
+                            <div class="opinion_h3">
+                                <h3>EDITORIAL</h3>
+                                <h4>Keep it simple: On Aadhaar-voter ID linking</h4>
+                            </div>
+                            <!-- append -->
+                        </div>
+                        <div id="let_opinion_buttom">
+
+                            <div id="buttom_left">
+                                <div id="left_top">
+                                    <!-- append 1 small div -->
+                                </div>
+                                <div id="left_buttom">
+                                    <!-- cartoon -->
+                                    <h2>CARTOON</h2>
+                                    <img src="https://th-i.thgim.com/public/latest-news/a4y63z/article65807311.ece/alternates/LANDSCAPE_560/OnTheDraw-Aug252022.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div id="buttom_right">
+                                <!-- appending 3 small div here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="opinion_right">
+                        <div id="right_heading">
+                            <h2>Trending on The Hindu</h2>
+                        </div>
+                        <div id="right_content">
+                            <div class="hedline">
+                                <h2 class="hedline_h2"><i class="fa-regular fa-eye"></i>
+                                    <span class="hedline_span">2K</span>
+                                    DRDO, Indian Navy test fire indigenous Vertical Launch Short Range surface-to-air
+                                    issile
+                                </h2>
+                            </div>
+                            <div class="hedline">
+                                <h2 class="hedline_h2"><i class="fa-regular fa-eye" class="hedline_i"></i>
+                                    <span class="hedline_span">4K</span>
+                                    Adani Group is 'deeply overleveraged', warns CreditSights
+                                </h2>
+                            </div>
+                            <div class="hedline">
+                                <h2 class="hedline_h2"><i class="fa-regular fa-eye" class="hedline_i"></i>
+                                    <span class="hedline_span">1K</span>
+                                    Sporting trouble: On Supreme Court terminating mandate to manage the football body
+                                </h2>
+                            </div>
+                            <div class="hedline">
+                                <h2 class="hedline_h2"><i class="fa-regular fa-eye" class="hedline_i"></i>
+                                    <span class="hedline_span">3K</span>
+                                    Railway Ministry gives nod to Bengaluru-Mangaluru train via Mysuru six days a week
+                                </h2>
+                            </div>
+                            <div class="hedline">
+                                <h2 class="hedline_h2"><i class="fa-regular fa-eye" class="hedline_i"></i>
+                                    <span class="hedline_span">3K</span>
+                                    Railway Ministry gives nod to Bengaluru-Mangaluru train via Mysuru six days a week
+                                </h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- explain -->
+
+            <div id="explain">
+                <div id="explain_head">
+                    <h1>Explain</h1>
+                    <div id="explain_boder_only"></div>
+                </div>
+
+                <!-- main contaxt starts -->
+
+                <div id="explain_content">
+                    <div id="explain_left">
+                        <div id="explain_left_left">
+                            <!-- append -->
+                        </div>
+                        <div id="explain_left_right">
+                            <!-- append small data -->
+                        </div>
+                    </div>
+                    <div id="explain_right">
+
+                        <div id="explain_right_heading">
+                            <h2>Explained | Who is Xiao Jianhua, the Chinese billionaire given a 13-year prison
+                                sentence?</h2>
+                        </div>
+
+                        <div id="explain_right_content">
+                            <h3>The Chinese-Canadian tycoon was convicted of a string of financial offences </h3>
+                            <h3>DIKSHA MINJAL</h3>
+                            <div id="content_img_div">
+                                <img src="https://th-i.thgim.com/public/incoming/e7irak/article65797495.ece/alternates/LANDSCAPE_300/IMG_iStock-1205555607.jp_2_1_G19H7275.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
 
 
 
 
-        <!-- container DIV -->    
+            </div>
+
+            <!-- columns -->
+            <div id="columns">
+                <div id="columns_head">
+                    <h1>Columns</h1>
+                    <div id="columns_boder_only"></div>
+                </div>
+
+                <!-- main content start from here -->
+                <div id="colmuns_content">
+                    <div class="column_div">
+                        <div class="column_image">
+                            <img src="https://th-i.thgim.com/public/todays-paper/tp-in-school/article19460475.ece/alternates/SQUARE_80/ALL1FrontPgAG6D25N3QU12jpgjpg" alt="">
+                        </div>
+                        <div class="column_text">
+                            <h3>Political Line | India@75: state of democracy, the freebie debate, new Kashmir voters and more</h3>
+                            <h4>VARGHESE K. GEORGE</h4>
+                        </div>
+                    </div>
+                    <div class="column_div">
+                        <div class="column_image">
+                            <img src="https://th-i.thgim.com/public/incoming/9q7rkh/article65757397.ece/alternates/SQUARE_80/lizards22.jpg" alt="">
+                        </div>
+                        <div class="column_text">
+                            <h3>Allegedly | | Satire | You can’t win against a reptile
+                               </h3>
+                            <h4> G. SAMPATH</h4>
+                        </div>
+                    </div>
+                    <div class="column_div">
+                        <div class="column_image">
+                            <img src="https://www.thehindu.com/theme/images/th-online/thlogov1.png" alt="">
+                        </div>
+                        <div class="column_text">
+                            <h3> READERS' EDITOR: TERMS OF REFERENCE</h3>
+                            <h4> CODE OF EDITORIAL VALUES</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+           
+
+
+            <!-- container DIV ends here-->
         </div>
 
 
@@ -223,8 +412,7 @@ var options = {
         <div id="add_right" class="add">
             <img src="https://s0.2mdn.net/simgad/10002112593280643179" alt="">
         </div>
-<!-- 
-hello -->
+
 
 
 

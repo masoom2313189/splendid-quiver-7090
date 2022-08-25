@@ -12,6 +12,11 @@ let getCountryNews= async (url)=>{
     part_1_left_breaking_big(articles)
      part_1_left_breaking_mini(articles)
      container_workflow_mumbai(articles)
+     top_sliding_news(articles)
+     left_top(articles)
+     explain_left_left(articles)
+     explain_left_right(articles)
+    // topPics_News(articles)
 }
 let getCategoryNews= async (url)=>{
     let res= await fetch(url)
@@ -19,6 +24,9 @@ let getCategoryNews= async (url)=>{
     articles= data.articles
     console.log(articles)
     part_1_right_breaking_mini(articles)
+    topPics_News(articles)
+    buttom_right(articles)
+    
 }
 getCountryNews(url_country)
 getCategoryNews(url_category)
@@ -68,7 +76,7 @@ let part_1_left_breaking_mini= (data)=>{
 
     let h3= document.createElement("h3")
     h3.setAttribute("class","h3")
-    h3.innerText =data[random].content
+    h3.innerText =data[random].title
 
 
     divText.append(divText_opinion,h3)
@@ -115,7 +123,7 @@ let part_1_right_breaking_mini= (data)=>{
         divText_opinion.append(opinion)
     
         let h3= document.createElement("h3")
-        h3.innerText =data[random].content
+        h3.innerText =data[random].title
         h3.setAttribute("class","h3")
     
     
@@ -133,6 +141,7 @@ let container_workflow_mumbai= (data)=>{
     for(let i=0; i<2; i++){
         let random = Math.floor(Math.random()*19+1)
         let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
     
         let divPhoto = document.createElement("div")
         divPhoto.setAttribute("class","miniNews")
@@ -159,7 +168,7 @@ let container_workflow_mumbai= (data)=>{
     
         let h3= document.createElement("h3")
         h3.setAttribute("class","h3")
-        h3.innerText =data[random].content
+        h3.innerText =data[random].title
     
     
         divText.append(divText_opinion,h3)
@@ -185,9 +194,200 @@ let workflow_part_2=()=>{
 }
 workflow_part_2()
 
+let top_sliding_news=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","top_sliding_news_maindiv")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","top_sliding_news_DivPhoto")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","top_sliding_news_divText")
+    
+    
+        let img= document.createElement("img")
+        img.setAttribute("class","top_sliding_news_Image")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+
+        let opinion= document.createElement("h3")
+        opinion.setAttribute("class","top_sliding_news_opinion")
+        opinion.innerText= data[random].title
+
+        let h5= document.createElement("h5")
+        h5.setAttribute("class","h5")
+        h5.setAttribute("class","top_sliding_news_h5")
+        h5.innerText= data[random].author
+
+        
+        divText.append(opinion,h5)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("top_sliding_news").append(maindiv)
+    }
+}
 
 
+let topPics_News=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","top_sliding_news_maindiv")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","top_sliding_news_DivPhoto")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","top_sliding_news_divText")
+    
+    
+        let img= document.createElement("img")
+        img.setAttribute("class","top_sliding_news_Image")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+
+        let opinion= document.createElement("h3")
+        opinion.setAttribute("class","top_sliding_news_opinion")
+        opinion.innerText= data[random].title
+
+        let h5= document.createElement("h5")
+        h5.setAttribute("class","h5")
+        h5.setAttribute("class","top_sliding_news_h5")
+        h5.innerText= data[random].author
+
+        
+        divText.append(opinion,h5)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("topPics_News").append(maindiv)
+    }
+}
 
 
+let left_top=(data)=>{
+    for(let i=0; i<1; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","miniNews")
+        let divText = document.createElement("div")
+        divText.setAttribute("class","divText")
+    
+    
+        let img= document.createElement("img")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+        let divText_opinion = document.createElement("div")
+        divText_opinion.setAttribute("class","divText_opinion")
+        let opinion= document.createElement("h2")
+        opinion.setAttribute("class","opinion")
+        opinion.innerText= "LEAD"
+        
+        
+        divText_opinion.append(opinion)
+    
+        let h3= document.createElement("h3")
+        h3.setAttribute("class","h3")
+        h3.innerText =data[random].title
+    
+    
+        divText.append(divText_opinion,h3)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("left_top").append(maindiv)
+    }
+}
 
 
+let buttom_right=(data)=>{
+    for(let i=0; i<3; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","miniNews")
+        let divText = document.createElement("div")
+        divText.setAttribute("class","divText")
+    
+    
+        let img= document.createElement("img")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+        let divText_opinion = document.createElement("div")
+        divText_opinion.setAttribute("class","divText_opinion")
+        let opinion= document.createElement("h2")
+        opinion.setAttribute("class","opinion")
+        opinion.innerText= "COMMENT"
+        
+        
+        divText_opinion.append(opinion)
+    
+        let h3= document.createElement("h3")
+        h3.setAttribute("class","h3")
+        h3.innerText =data[random].title
+    
+    
+        divText.append(divText_opinion,h3)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("buttom_right").append(maindiv)
+    }
+}
+
+
+let explain_left_left=(data)=>{
+    let random = Math.floor(Math.random()*20+1)
+    let div = document.createElement("div")
+    let img= document.createElement("img")
+    img.src= data[random].urlToImage
+    div.append(img)
+
+    let h1 =document.createElement("h1")
+    h1.innerText= data[random].title
+    let h3= document.createElement("h3")
+    h3.innerText =data[random].author
+    let h5= document.createElement("h5")
+    h5.innerText =data[random].description
+
+document.getElementById("explain_left_left").append(div,h1,h3,h5)
+}
+
+
+let explain_left_right=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","miniNews")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","divText")
+    
+    
+        let img= document.createElement("img")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+    
+        let h3= document.createElement("h3")
+        h3.setAttribute("class","h3")
+        h3.innerText =data[random].title
+    
+    
+        divText.append(h3)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("explain_left_right").append(maindiv)
+    }
+}
