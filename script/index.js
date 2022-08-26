@@ -665,7 +665,7 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
 let x=0
 
 let cartoonArray =["https://th-i.thgim.com/public/latest-news/a4y63z/article65807311.ece/alternates/LANDSCAPE_560/OnTheDraw-Aug252022.jpg",
-"https://th-i.thgim.com/public/incoming/c13sd3/article65811185.ece/alternates/LANDSCAPE_560/OnTheDraw.JPG"]
+"https://th-i.thgim.com/public/incoming/c13sd3/article65811185.ece/alternates/LANDSCAPE_560/OnTheDraw.JPG","https://th-i.thgim.com/public/latest-news/g359wc/article65795264.ece/alternates/LANDSCAPE_660/OnTheDraw-Aug222022.jpg","https://th-i.thgim.com/public/news/national/rjockw/article65663547.ece/alternates/LANDSCAPE_660/Untitled-Artwork%20%282%29.jpg","https://th-i.thgim.com/public/incoming/qc61ai/article65736026.ece/alternates/LANDSCAPE_660/OnTheDraw.jpeg"]
 let cartoon = () => {
 
     let cointainer = document.getElementById('left_buttom')
@@ -682,3 +682,8 @@ let cartoon = () => {
 
 }
 cartoon()
+
+
+
+import footer from "../component/footer.js"
+document.getElementById('footer').innerHTML = footer()
