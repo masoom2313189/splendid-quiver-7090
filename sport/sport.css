@@ -14,9 +14,9 @@
 }
 #left
 {
-    /* width: 13%; */
+    /* width: 12%; */
     /* height: auto; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: sticky ;
     top:0px;
     left: 0px;
@@ -32,13 +32,13 @@
     /* margin-left: 13%; */
     /* margin-right: 13%; */
 }
-#upper>#right
+#right
 {
     /* width: 13%; */
     height: auto;
     /* border: 1px solid black; */
-    position: fixed;
-    right: 0px;
+    /* position: fixed; */
+    /* right: 0px; */
 }
 #middle>#top{
 width: 97%;
@@ -53,7 +53,7 @@ margin-top: 90px;
     margin: auto;
     display: flex;
     margin-top: 20px;
-    background-color: white;
+    /* background-color: white; */
 }
 #mid>#LO{
     width: 70%;
@@ -64,7 +64,7 @@ margin-top: 90px;
 #mid>#RO{
     width: 30%;
     height: 800px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     background-color: white;
 }
 #LO1h2
@@ -100,6 +100,8 @@ margin-top: 90px;
 #LO1IMG
 {
     margin-top: 10px;
+    width: 97%;
+    height: 296px;
     
 
 }
@@ -132,7 +134,7 @@ margin-top: 90px;
     font-size: 12px;
     margin-top: 10px;
     padding-left: 5px;
-    color: rgb(46, 46, 46);
+    color: rgb(50,110,0);
     background-color: white;
     cursor: pointer;
 }
@@ -157,6 +159,8 @@ margin-top: 90px;
     margin: auto;
     margin-top: 30px;
 }
+
+
 #opinion{
     width: 73%;
     height: auto;
@@ -166,12 +170,12 @@ margin-top: 90px;
     margin-top: 150px;
 }
 #opinion>#line{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(50,110,0);
     width: 750px;
 }
 #opinion>#opinionh2{
     font-size: 20px;
-    color:rgb(19,59,90);
+    color:rgb(50,110,0);
     cursor: pointer;
 }
 #opinionh2:hover{
@@ -239,7 +243,7 @@ margin-top: 90px;
     padding-left: 10px;
     margin-top: 10px;
     font-size: 15px;
-    color: rgb(19,59,90);
+    color: rgb(50,110,0);
     background-color: white;
     cursor: pointer;
 }
@@ -287,20 +291,23 @@ margin-top: 90px;
 }
 #opi22{
     width: 100%;
-    height: 53%;
+    height: 48%;
     /* border: 1px solid red; */
+    background-color: rgb(50,110,0);
 }
 #opi22
 >img{
-    width: 100%;
+    width: 60%;
+    background-color:rgb(50,110,0) ;
+    margin-left: 90px;
     
 }
 #opi21{
-    background-color: rgb(19,59,90);
+    background-color: rgb(50,110,0);
 }
 #opi21>h2{
     color: white;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     font-size: 19px;
     padding-left: 10px;
     /* margin-top: 5px; */
@@ -311,7 +318,7 @@ margin-top: 90px;
 }
 #opi21>p{
     color: white;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     margin-top: 10px;
     font-size: 13px;
     padding-left: 10px;
@@ -320,7 +327,9 @@ margin-top: 90px;
 #opi21>p:hover{
     text-decoration: underline;
 }
-#market{
+
+
+#cricket{
     width: 73%;
     height: auto;
     /* border: 1px solid teal; */
@@ -328,29 +337,29 @@ margin-top: 90px;
     display: flex;
     /* margin-top: 10px; */
 }
-#market>#marketLine{
-    border-bottom: 1px solid black;
+#cricketLine{
+    border-bottom: 1px solid rgb(50,110,0);
     width: 850px;
 }
-#market>#marketh2{
+#cricketh2{
     font-size: 20px;
-    color:rgb(19,59,90) ;
+    color:rgb(50,110,0) ;
     cursor: pointer;
 }
-#marketh2:hover{
+#cricketh2:hover{
     text-decoration: underline;
 }
-#market>#marketp{
+#cricketp{
     font-size: 12px;
     font-weight: 700;
     color:gray;
     margin-top: 7px;
     cursor: pointer;
 }
-#marketp:hover{
+#cricketp:hover{
     text-decoration: underline;
 }
-#mark{
+#cri{
     width: 73%;
     height: 450px;
     /* border: 1px solid red; */
@@ -358,53 +367,53 @@ margin-top: 90px;
     margin-top: 22px;
     display: flex;
 }
-#mark>#mark1{
+#cri1{
     width: 70%;
     height: 400px;
     /* border: 1px solid teal; */
     display: flex;
 }
-#mark>#mark2{
+#cri2{
     width: 30%;
     height: 400px;
     /* border: 1px solid teal; */
 }
-#mark1>#mark11{
+#cri11{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     background-color: white;
 }
-#mark1>#mark12{
-    width: 30%;
-    height: auto;
-    /* border: 1px solid red; */
-    background-color: white;
-    margin-left: 3%;
-}
-#mark1>#mark13{
+#cri12{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     background-color: white;
     margin-left: 3%;
 }
-.markimg{
+#cri13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+.criimg{
     width:100%
 }
-.markh2{
+.crih2{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 14px;
-    color:rgb(19,59,90) ;
+    color:rgb(50,110,0) ;
     background-color: white;
     font-weight: 600;
     cursor:pointer;
 }
-.markh2:hover{
+.crih2:hover{
     text-decoration: underline;
 }
-.markp1{
+.crip1{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 15px;
@@ -413,10 +422,10 @@ margin-top: 90px;
     font-weight: 500;
     cursor: pointer;
 }
-.markp1:hover{
+.crip1:hover{
     text-decoration: underline;
 }
-.markp2{
+.crip2{
     padding-left: 10px;
     margin-top: 6px;
     font-size: 12px;
@@ -425,10 +434,10 @@ margin-top: 90px;
     font-weight: 600;
     cursor: pointer;
 }
-.markp2:hover{
+.crip2:hover{
     text-decoration: underline;
 }
-.markp3{
+.crip3{
     padding-left: 10px;
     margin-top: 8px;
     font-size: 13px;
@@ -436,58 +445,16 @@ margin-top: 90px;
     background-color: white;
     cursor: pointer;
 }
-.markp3:hover{
+.crip3:hover{
     text-decoration: underline;
 }
-#mark21{
+#cri21{
     width: auto;
     height: 55%;
 }
-#mark22{
-    width: auto;
-    height: 45%;
-}
-#mark2h2{
-    color: white;
-    background-color:rgb(19,59,90) ;
-    font-size: 19px;
-    padding-left: 10px;
-    cursor: pointer;
-}
-#mark2h2:hover{
-    text-decoration: underline;
-}
-#mark2p1{
-    padding-left: 10px;
-    background-color: rgb(19,59,90);
-    color: white;
-}
-#mark2p2{
-    color: white;
-    background-color:rgb(19,59,90) ;
-    margin-top: 10px;
-    font-size: 13px;
-    padding-left: 10px;
-    cursor: pointer;
-}
-#mark2p2:hover{
-    text-decoration: underline;
-}
-#mark2p3{
-    margin-top:10px ;
-    padding-left:10px ;
-    background-color:rgb(19,59,90) ;
-    color: white;
-    font-size: 13px;
-}
-#mark22>img{
-    width: 100%;
-}
 
 
-
-
-#economy{
+ #football{
     width: 73%;
     height: auto;
     /* border: 1px solid teal; */
@@ -495,29 +462,29 @@ margin-top: 90px;
     display: flex;
     /* margin-top: 10px; */
 }
-#economy>#economyLine{
-    border-bottom: 1px solid black;
+#footballLine{
+    border-bottom: 1px solid rgb(50,110,0);
     width: 840px;
 }
-#economy>#economyh2{
+#footballh2{
     font-size: 20px;
-    color:rgb(19,59,90) ;
+    color:rgb(50,110,0) ;
     cursor: pointer;
 }
-#economyh2:hover{
+#footballh2:hover{
     text-decoration: underline;
 }
-#economy>#economyp{
+#footballp{
     font-size: 12px;
     font-weight: 700;
     color:gray;
     margin-top: 7px;
     cursor: pointer;
 }
-#economyp:hover{
+#footballp:hover{
     text-decoration: underline;
 }
-#eco{
+#foot{
     width: 73%;
     height: 450px;
     /* border: 1px solid red; */
@@ -525,53 +492,53 @@ margin-top: 90px;
     margin-top: 22px;
     display: flex;
 }
-#eco>#eco1{
+#foot1{
     width: 70%;
     height: 400px;
     /* border: 1px solid teal; */
     display: flex;
 }
-#eco>#eco2{
+#foot2{
     width: 30%;
     height: 400px;
     /* border: 1px solid teal; */
 }
-#eco1>#eco11{
+#foot11{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     background-color: white;
 }
-#eco1>#eco12{
-    width: 30%;
-    height: auto;
-    /* border: 1px solid red; */
-    background-color: white;
-    margin-left: 3%;
-}
-#eco1>#eco13{
+#foot12{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     background-color: white;
     margin-left: 3%;
 }
-.ecoimg{
+#foot13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+.footimg{
     width:100%
 }
-.ecoh2{
+.footh2{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 14px;
-    color:rgb(19,59,90) ;
+    color:rgb(50,110,0) ;
     background-color: white;
     font-weight: 600;
     cursor:pointer
 }
-.ecoh2:hover{
+.footh2:hover{
     text-decoration: underline;
 }
-.ecop1{
+.footp1{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 15px;
@@ -580,10 +547,10 @@ margin-top: 90px;
     font-weight: 500;
     cursor: pointer;
 }
-.ecop1:hover{
+.footp1:hover{
     text-decoration: underline;
 }
-.ecop2{
+.footp2{
     padding-left: 10px;
     margin-top: 6px;
     font-size: 12px;
@@ -591,97 +558,99 @@ margin-top: 90px;
     background-color: white;
     font-weight: 600;
 }
-.ecop3{
+.footp3{
     padding-left: 10px;
     margin-top: 8px;
     font-size: 13px;
     color: rgb(80, 80, 80);
     background-color: white;
 }
-#eco21{
+#foot21{
     width: auto;
     height: 55%;
 }
-#eco22{
+#foot22{
     width: auto;
     height: 45%;
 }
-#eco2h2{
+#foot2h2{
     color: white;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     font-size: 19px;
     padding-left: 10px;
     cursor: pointer;
 }
-#eco2h2:hover{
+#foot2h2:hover{
     text-decoration: underline;
 }
-#eco2p1{
+#foot2p1{
     padding-left: 10px;
-    background-color: rgb(19,59,90);
+    background-color: rgb(50,110,0);
     color: white;
 }
-#eco2p2{
+#foot2p2{
     color: white;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     margin-top: 10px;
     font-size: 13px;
     padding-left: 10px;
     cursor: pointer;
 }
-#eco2p2:hover{
+#foot2p2:hover{
     text-decoration: underline;
 }
-#eco2p3{
+#foot2p3{
     margin-top:10px ;
     padding-left:10px ;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     color: white;
     font-size: 13px;
     cursor: pointer;
 }
-#eco2p3:hover{
+#foot2p3:hover{
     text-decoration: underline;
 }
-#eco22>img{
+#foot22>img{
     width: 100%;
-}
+} 
 
 
 
 
 
-#industry{
+
+
+#hockey{
     width: 73%;
     height: auto;
     /* border: 1px solid teal; */
     margin: auto;
     display: flex;
-    margin-top: 5px;
+    /* margin-top: 10px; */
 }
-#industry>#line{
-    border-bottom: 1px solid black;
-    width: 850px;
+#hockeyLine{
+    border-bottom: 1px solid rgb(50,110,0);
+    width: 840px;
 }
-#industry>#industryh2{
+#hockeyh2{
     font-size: 20px;
-    color:rgb(19,59,90) ;
+    color:rgb(50,110,0) ;
     cursor: pointer;
 }
-#industryh2:hover{
+#hockeyh2:hover{
     text-decoration: underline;
 }
-#industry>#industryp{
+#hockeyp{
     font-size: 12px;
     font-weight: 700;
     color:gray;
     margin-top: 7px;
     cursor: pointer;
 }
-#industryp:hover{
+#hockeyp:hover{
     text-decoration: underline;
 }
-#ind{
+#hock{
     width: 73%;
     height: 450px;
     /* border: 1px solid red; */
@@ -689,125 +658,617 @@ margin-top: 90px;
     margin-top: 22px;
     display: flex;
 }
-#ind>#ind1{
+#hock1{
     width: 70%;
     height: 400px;
     /* border: 1px solid teal; */
     display: flex;
 }
-#ind>#ind2{
+#hock2{
     width: 30%;
     height: 400px;
     /* border: 1px solid teal; */
 }
-#ind1>#ind11{
+#hock11{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     background-color: white;
 }
-#ind1>#ind12{
+#hock12{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
+    background-color: white;
     margin-left: 3%;
-    background-color: white;
 }
-#ind1>#ind13{
+#hock13{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
+    background-color: white;
     margin-left: 3%;
-    background-color: white;
 }
-#ind11>img{
-    width: 100%;
+.hockimg{
+    width:100%
 }
-#ind12>img{
-    width: 100%;
-}
-#ind13>img{
-    width: 100%;
-}
-.ind121{
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
-    color: rgb(19,59,90);
-    background-color: white;
-    cursor: pointer;
-}
-.ind121:hover{
-    text-decoration: underline;
-}
-.indp{
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: rgb(80, 80, 80);
-    background-color: white;
-    cursor: pointer;
-}
-.indp:hover{
-    text-decoration: underline;
-}
-.indpp{
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: gray;
-    background-color: white;
-    
-}
-
-.indh4{
+.hockh2{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 14px;
-    color: gray;
+    color:rgb(50,110,0) ;
     background-color: white;
-    cursor: pointer;
+    font-weight: 600;
+    cursor:pointer
 }
-.indh4:hover{
+.hockh2:hover{
     text-decoration: underline;
 }
-
-#ind21{
-    width: 100%;
-    height: 53%;
-    /* border: 1px solid red; */
+.hockp1{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
 }
-#ind22{
-    width: 100%;
-    height: 53%;
-    /* border: 1px solid red; */
+.hockp1:hover{
+    text-decoration: underline;
 }
-#ind22
->img{
-    width: 100%;
-    
+.hockp2{
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 600;
 }
-#ind21{
-    background-color: rgb(19,59,90);
+.hockp3{
+    padding-left: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+    background-color: white;
 }
-#ind21>h2{
+#hock21{
+    width: auto;
+    height: 55%;
+}
+#hock22{
+    width: auto;
+    height: 45%;
+}
+#hock2h2{
     color: white;
-    background-color:rgb(19,59,90) ;
+    background-color:rgb(50,110,0) ;
     font-size: 19px;
     padding-left: 10px;
     cursor: pointer;
-    /* margin-top: 5px; */
 }
-#ind21>h2:hover{
-    text-decoration:underline;
+#hock2h2:hover{
+    text-decoration: underline;
 }
-#ind21>p{
+#hock2p1{
+    padding-left: 10px;
+    background-color: rgb(50,110,0);
     color: white;
-    background-color:rgb(19,59,90) ;
+}
+#hock2p2{
+    color: white;
+    background-color:rgb(50,110,0) ;
     margin-top: 10px;
     font-size: 13px;
     padding-left: 10px;
+    cursor: pointer;
 }
+#hock2p2:hover{
+    text-decoration: underline;
+}
+#hock2p3{
+    margin-top:10px ;
+    padding-left:10px ;
+    background-color:rgb(50,110,0) ;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+#hock2p3:hover{
+    text-decoration: underline;
+}
+#hock22>img{
+    width: 100%;
+} 
+
+
+
+
+#tennis{
+    width: 73%;
+    height: auto;
+    /* border: 1px solid teal; */
+    margin: auto;
+    display: flex;
+    /* margin-top: 10px; */
+}
+#tennisLine{
+    border-bottom: 1px solid rgb(50,110,0);
+    width: 840px;
+}
+#tennish2{
+    font-size: 20px;
+    color:rgb(50,110,0) ;
+    cursor: pointer;
+}
+#tennish2:hover{
+    text-decoration: underline;
+}
+#tennisp{
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#tennisp:hover{
+    text-decoration: underline;
+}
+#ten{
+    width: 73%;
+    height: 450px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+}
+#ten1{
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid teal; */
+    display: flex;
+}
+#ten2{
+    width: 30%;
+    height: 400px;
+    /* border: 1px solid teal; */
+}
+#ten11{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+#ten12{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+#ten13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+.tenimg{
+    width:100%
+}
+.tenh2{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:rgb(50,110,0) ;
+    background-color: white;
+    font-weight: 600;
+    cursor:pointer
+}
+.tenh2:hover{
+    text-decoration: underline;
+}
+.tenp1{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.tenp1:hover{
+    text-decoration: underline;
+}
+.tenp2{
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 600;
+}
+.tenp3{
+    padding-left: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+#ten21{
+    width: auto;
+    height: 55%;
+}
+#ten22{
+    width: auto;
+    height: 45%;
+}
+#ten2h2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    font-size: 19px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#ten2h2:hover{
+    text-decoration: underline;
+}
+#ten2p1{
+    padding-left: 10px;
+    background-color: rgb(50,110,0);
+    color: white;
+}
+#ten2p2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#ten2p2:hover{
+    text-decoration: underline;
+}
+#ten2p3{
+    margin-top:10px ;
+    padding-left:10px ;
+    background-color:rgb(50,110,0) ;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+#ten2p3:hover{
+    text-decoration: underline;
+}
+#ten22>img{
+    width: 100%;
+} 
+
+
+
+
+#races{
+    width: 73%;
+    height: auto;
+    /* border: 1px solid teal; */
+    margin: auto;
+    display: flex;
+    /* margin-top: 10px; */
+}
+#racesLine{
+    border-bottom: 1px solid rgb(50,110,0);
+    width: 840px;
+}
+#racesh2{
+    font-size: 20px;
+    color:rgb(50,110,0) ;
+    cursor: pointer;
+}
+#racesh2:hover{
+    text-decoration: underline;
+}
+#racesp{
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#racesp:hover{
+    text-decoration: underline;
+}
+#rac{
+    width: 73%;
+    height: 450px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+}
+#rac1{
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid teal; */
+    display: flex;
+}
+#rac2{
+    width: 30%;
+    height: 400px;
+    /* border: 1px solid teal; */
+}
+#rac11{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+#rac12{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+#rac13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+.racimg{
+    width:100%
+}
+.rach2{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:rgb(50,110,0) ;
+    background-color: white;
+    font-weight: 600;
+    cursor:pointer
+}
+.rach2:hover{
+    text-decoration: underline;
+}
+.racp1{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.racp1:hover{
+    text-decoration: underline;
+}
+.racp2{
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 600;
+}
+.racp3{
+    padding-left: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+#rac21{
+    width: auto;
+    height: 55%;
+}
+#rac22{
+    width: auto;
+    height: 45%;
+}
+#rac2h2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    font-size: 19px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#rac2h2:hover{
+    text-decoration: underline;
+}
+#rac2p1{
+    padding-left: 10px;
+    background-color: rgb(50,110,0);
+    color: white;
+}
+#rac2p2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#rac2p2:hover{
+    text-decoration: underline;
+}
+#rac2p3{
+    margin-top:10px ;
+    padding-left:10px ;
+    background-color:rgb(50,110,0) ;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+#rac2p3:hover{
+    text-decoration: underline;
+}
+#rac22>img{
+    width: 100%;
+} 
+
+
+
+#otherS{
+    width: 73%;
+    height: auto;
+    /* border: 1px solid teal; */
+    margin: auto;
+    display: flex;
+    /* margin-top: 10px; */
+}
+#otherSLine{
+    border-bottom: 1px solid rgb(50,110,0);
+    width: 800px;
+}
+#otherSh2{
+    font-size: 20px;
+    color:rgb(50,110,0) ;
+    cursor: pointer;
+}
+#otherSh2:hover{
+    text-decoration: underline;
+}
+#otherSp{
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#otherSp:hover{
+    text-decoration: underline;
+}
+#oths{
+    width: 73%;
+    height: 450px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+}
+#oths1{
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid teal; */
+    display: flex;
+}
+#oths2{
+    width: 30%;
+    height: 400px;
+    /* border: 1px solid teal; */
+}
+#oths11{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+#oths12{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+#oths13{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-left: 3%;
+}
+.othsimg{
+    width:100%
+}
+.othsh2{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:rgb(50,110,0) ;
+    background-color: white;
+    font-weight: 600;
+    cursor:pointer
+}
+.othsh2:hover{
+    text-decoration: underline;
+}
+.othsp1{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.othsp1:hover{
+    text-decoration: underline;
+}
+.othsp2{
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+    font-weight: 600;
+}
+.othsp3{
+    padding-left: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+    background-color: white;
+}
+#oths21{
+    width: auto;
+    height: 55%;
+}
+#oths22{
+    width: auto;
+    height: 45%;
+}
+#oths2h2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    font-size: 19px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#oths2h2:hover{
+    text-decoration: underline;
+}
+#oths2p1{
+    padding-left: 10px;
+    background-color: rgb(50,110,0);
+    color: white;
+}
+#oths2p2{
+    color: white;
+    background-color:rgb(50,110,0) ;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#oths2p2:hover{
+    text-decoration: underline;
+}
+#oths2p3{
+    margin-top:10px ;
+    padding-left:10px ;
+    background-color:rgb(50,110,0) ;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+#oths2p3:hover{
+    text-decoration: underline;
+}
+#oths22>img{
+    width: 100%;
+} 
+
+
 
 
 #otherAr{
@@ -1016,16 +1477,5 @@ margin-top: 90px;
     font-size: 15px;
     color: rgb(109, 109, 109);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
