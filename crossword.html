@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://crossword.thehindu.com/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Swipper Slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>The Hindu Crossword+</title>
+    <link rel="stylesheet" href="./crossword.css">
+</head>
+<body>
+    <div id="navbar-1">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <img src="https://crossword.thehindu.com/images/crossword-logos/svg/TH_CW_logo.svg" alt="logo">
+        <div>
+            <button>Subscribe Now</button>
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+    </div>
+    <div id="navbar-2">
+    <a href="#" onclick="appendCrossword()">Crossword</a>
+    <a href="#" onclick="appendSudoku()">Sudoku</a>
+    <a href="#" onclick="appendWordSearch()">Word Search</a>
+    </div>
+    <div id="div-1">
+        <h1>Enjoy puzzles? Welcome home!</h1>
+        <p>TH Crossword+ offers you a big kit of classic word and number puzzles. Whet your wits on six Crossword series, ranging from the simple to the Cryptic. Get thrilled in a number of ways with four types of Sudoku puzzles. Gambol through our word mazes to never again be at a loss for words. Become a master solver along the way.</p>
+        <button id="subscribe">Subscribe Now</button>
+        <button id="crossword">Crossword e-Book</button>
+    </div>
+    <div id="div-2">
+        <div>
+            <h1>Free Games</h1>
+        </div>
+        <p>Love the idea of solving puzzles, but like to get a taste before you dive in? Not a problem. Try out our free sample games — hunt for words inside a maze of letters, let clues lead you to a filled crossword grid that leaves you energised, and dig out numbers hidden inside squares. Hungry for more? Come back and subscribe right here!</p>
+
+        <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Track Down</h4>
+                        <button>CAKEWALK</button>
+                        <p>An easy game where your eyes guide your brain to words.</p>
+                    </div>
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Name Game</h4>
+                        <button>CAKEWALK</button>
+                        <p>A quiz-style word search that tests your topical savvy.</p>
+                    </div>
+                   
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Word Hunt</h4>
+                        <button>BRAIN-JOGGER</button>
+                        <p>Hints help you in the hunt for thematic words in a letter grid.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/sudoku_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Mini Sudoku</h4>
+                        <button>CAKEWALK</button>
+                        <p>Number challenges for our younger players.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+
+                 <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/grid_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>One Down</h4>
+                        <button>CAKEWALK</button>
+                        <p>A shorter, simpler crossword challenge.</p>
+                    </div>
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Word Work</h4>
+                        <button>BRAIN-JOGGER</button>
+                        <p>Where descriptive clues guide you toward words in a maze of letters.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/sudoku_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Sudoku Easy</h4>
+                        <button>CAKEWALK</button>
+                        <p>An easy-to-do version of the world's favourite number game.</p>
+                    </div>
+                   
+                </div>
+                <div class="last-div">
+                   <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Track Down</h4>
+                        <button>CAKEWALK</button>
+                        <p>An easy game where your eyes guide your brain to words.</p>
+                    </div>
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Name Game</h4>
+                        <button>CAKEWALK</button>
+                        <p>A quiz-style word search that tests your topical savvy.</p>
+                    </div>
+                   
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Word Hunt</h4>
+                        <button>BRAIN-JOGGER</button>
+                        <p>Hints help you in the hunt for thematic words in a letter grid.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/sudoku_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Mini Sudoku</h4>
+                        <button>CAKEWALK</button>
+                        <p>Number challenges for our younger players.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+
+                 <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/grid_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>One Down</h4>
+                        <button>CAKEWALK</button>
+                        <p>A shorter, simpler crossword challenge.</p>
+                    </div>
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/wordsearch_img.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Word Work</h4>
+                        <button>BRAIN-JOGGER</button>
+                        <p>Where descriptive clues guide you toward words in a maze of letters.</p>
+                    </div>
+                    
+                </div>
+                <div class="last-div">
+                    <p>PLAY NOW</p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div>
+                            <img src="https://crossword.thehindu.com/images/cwLandingPageImg/sudoku_image.png" alt="Error">
+                        </div>
+                    <div>
+                        <h4>Sudoku Easy</h4>
+                        <button>CAKEWALK</button>
+                        <p>An easy-to-do version of the world's favourite number game.</p>
+                    </div>
+                   
+                </div>
+                <div class="last-div">
+                   <p>PLAY NOW</p>
+                </div>
+                </div>
+
+
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    </div>
+    <div id="div-3">
+        <div>
+            <h1>New Games</h1>
+            <h4>Tuesday 23-Aug-2022</h4>
+        </div>
+            <p>A puzzle a day keeps the doctor away (no promises about the coronavirus!). Flavour your morning coffee with any of the up to seven new games added daily. Whether you’re looking for easy brain teasers or a sweaty mental workout, you will find yourself spoilt for choice and wanting more.</p>
+        
+                    <div class="swiper card_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #43823c;">
+                                <div>
+                                    <h4>Mini Sudoku</h4>
+                                    <button>CAKEWALK</button>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/sudoku_mini_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">6x6</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #563997;">
+                                <div>
+                                    <h4>One Down</h4>
+                                    <button>CAKEWALK</button>
+                                    <p>Hint: "___ Hills in Shillong is known to be one of the wettest..</p>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/onedown_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">9x9 | Litta Jacob</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #02a2a3;">
+                                <div>
+                                    <h4>Sudoku Easy</h4>
+                                    <button>CAKEWALK</button>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/sudoku_easy_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">9x9</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #30619b;">
+                                <div>
+                                    <h4>The Guardian Quick</h4>
+                                    <button>BRAIN-JOGGER</button>
+                                    <p>Hint: "Prejudice runs (anag) — study of law and its principles</p>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/TheGuardian_quick_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">13X13</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+
+                             <div class="swiper-slide">
+                                <div class="content" style="background-color: #c11d7b;">
+                                <div>
+                                    <h4>Sudoku Medium</h4>
+                                    <button>BRAIN-JOGGER</button>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/sudoku_medium_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">9x9</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #383538;">
+                                <div>
+                                    <h4>The Hindi Cryptic</h4>
+                                    <button>MARATHONER</button>
+                                    <p>Hint: "Weather vanes covered by the seven seas quivering in storms</p>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/TH_Cryptic_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">7x7</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content" style="background-color: #6b89ae;">
+                                <div>
+                                    <h4>Sudoku Hard</h4>
+                                    <button>MARATHONER</button>
+                                </div>
+                                <div>
+                                    <img src="https://crossword.thehindu.com/images/crossword-logos/svg/sudoku_hard_logo.svg" alt="Error">
+                                </div>
+                            </div>
+                            <div class="last-div">
+                                <p style="color: #5a1c8f;">9x9</p>
+                                <i class="fa fa-lock" style="color: #5a1c8f;"></i>
+                            </div>
+                            </div>
+
+                        </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+   
+    <div id="div-4">
+        <div>
+            <h1>Videos</h1>
+        </div>
+            <p>Want to learn more about cryptics and puzzle culture on the go? Watch this space as we give you demos of how to solve a cryptic crossword, unravel a sudoku grid, and other sideshow attractions. And if we’re lucky, we might just a sight the enigmatic setter in its natural habitat.</p>
+        <div>
+            <a href="https://www.youtube.com/watch?v=3ipNVbxj74s"><img src="https://crossword.thehindu.com//images/cwLandingPageImgReDesign/video-sudoku.jpg" alt="Error"></a>
+            <a href="https://www.youtube.com/watch?v=C_J9ADPV-k0"><img src="https://crossword.thehindu.com//images/cwLandingPageImgReDesign/video-crossword.jpg" alt="Error"></a>
+        </div>
+            
+    </div>
+    <div id="div-5">
+        <div>
+            <h1>Clued In (Blogs)</h1>
+            <h4><a href="#">VIEW ALL <i class="fa fa-arrow-circle-right" style="font-size:16px"></i></a></h4>
+        </div>
+            <p>Join us on Clued In as we take a fine-toothed comb through the latest cryptic grids, sift out a puzzling clue or two, and break it down for you, wordplay and all. Watch this space to discover what goes on in the setter’s sinister mind, gain insight into cryptic devices, and expand your Crosswordese vocabulary.</p>
+    </div>
+    <div id="div-6">
+        <div>
+            <h2>Clued In #353 | To the solver, with love, the setter</h2>
+            <p>Read on to figure out how to solve clues like... Omissions excepted, writes down exactly, like, what Ali Baba declared (4,6)’</p>
+            <div>
+                <p>| 30 September 2021</p>
+                <i class="fa fa-share-alt" style="font-size:24px"></i>
+            </div>
+        </div>
+        <img src="https://www.thehindu.com/todays-paper/tp-miscellaneous/tp-others/fc4lnr/article35111348.ece/alternates/FREE_1200/newMPTemplateGRI8NGPLP3jpgjpg" alt="Error">
+    </div>
+
+    <div id="div-7">
+        <div>
+            <h2>Clued In #352 | Cryptics pack a punch, make a fist of it!</h2>
+            <p>Read on to figure out how to solve clues like... ‘Explosive long fruit (9)’</p>
+            <div>
+                <p>| 18 July 2021</p>
+                <i class="fa fa-share-alt" style="font-size:24px"></i>
+            </div>
+        </div>
+        <img src="https://www.thehindu.com/news/national/other-states/2trw5o/article29878078.ece/alternates/FREE_1200/GRENADE" alt="Error">
+    </div>
+
+    <div id="div-8">
+        <div>
+            <h2>Clued In #351 | Gamble on cracking the clue, win the jackpot</h2>
+            <p>Read on to figure out how to solve clues like... ‘Any price arrangement involving dough, essentially (9)’</p>
+            <div>
+                <p>| 22 July 2021</p>
+                <i class="fa fa-share-alt" style="font-size:24px"></i>
+            </div>
+        </div>
+        <img src="https://www.thehindu.com/business/markets/z4hw50/article30654195.ece/alternates/FREE_1200/24thMW01BUPHOTO1" alt="Error">
+    </div>
+    <div id="div-9">
+        <h3 onclick="crossword()">Crossword</h3>
+        <h3 onclick="sudoku()">Sudoku</h3>
+        <h3 onclick="wordSearch()">Word Search</h3>
+    </div>
+    <p>Not sure where to start? Rifle through this catalogue of puzzles and see what you like. Once you’ve picked your poison, dive into your favourite series archive and access any puzzle from any date.</p>
+    <div id="div-10"></div>
+    <p>Copyright© 2022, THG PUBLISHING PVT LTD.</p>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./crossword.js"></script>
+

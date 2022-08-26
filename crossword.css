@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(128, 128, 128, 0.097);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar-1 
+{
+    width: 95%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#navbar-1 i{
+font-size: 35px;
+}
+#navbar-1 button{
+    padding: 10px 20px;
+    background-color: #5a1c8f;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+#navbar-1 button:hover{
+    cursor: pointer;
+    background-color: #6b15b6;
+}
+#navbar-1 img{
+    width: 400px;
+    background-color: white;
+}
+
+#navbar-2{
+width: 20%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+#navbar-2 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.665);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#div-1{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#div-1 h1,
+#div-2 h1,
+#div-3 h1,
+#div-4 h1,
+#div-5 h1{
+    margin-bottom: 10px;
+    color: #20023a;
+}
+
+#div-1 p,
+#div-2 p,
+#div-3 p,
+#div-4 p,
+#div-5 p{
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 18px;
+}
+
+#subscribe,
+#crossword{
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #5a1c8f;
+    border-color: #5a1c8f;
+    cursor: pointer;
+}
+
+#crossword{
+    color: #5a1c8f;
+    background-color: white;
+}
+
+#div-2,
+#div-3,
+#div-4,
+#div-5,
+#div-6,
+#div-7,
+#div-8
+{
+    width: 85%;
+    margin: auto;
+}
+#div-2>div:first-child,
+#div-4>div:first-child{
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+#div-3 > div:first-child,
+#div-5>div:first-child{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+#div-3 > div:first-child h4,
+#div-5 > div:first-child h4 a{
+color: #5a1c8f;
+}
+
+.content img{
+    width: 100%;
+}
+#div-3 .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#div-2 .content div img,
+#div-3 .content div img{
+    width: 100px;
+    height: 100px;
+}
+#div-2 .last-div,
+#div-3 .last-div{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    font-weight:500px;
+    height: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#div-2 .content p,
+#div-3 .content p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: -20px;
+}
+#div-2 .content button,
+#div-3 .content button{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#div-3 .content h4{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#div-2,
+#div-3{
+    margin-bottom: 20px;
+}
+
+#div-2 .content{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(128, 128, 128, 0.281);;
+}
+
+#div-2 .content div{
+    margin-right: 10px;
+}
+#div-2 .content h4{
+    color: black;
+    margin-bottom: 10px;
+}
+
+#div-2 .content p{
+    color:  black;
+}
+
+#div-2 .last-div {
+    background-color: black;
+    font-weight: bold;
+}
+
+#div-2 .last-div p{
+    color: white;
+    margin: auto;
+}
+
+#div-2 .content button{
+    background-color: black;
+}
+
+#div-4 div{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+}
+
+#div-4 div a img{
+    width: 550px;
+    border-radius: 10px;
+}
+#div-6 > div > div:last-child{
+    display: flex;
+    gap: 640px;
+}
+
+#div-8 > div > div:last-child,
+#div-7 > div > div:last-child{
+    display: flex;
+    gap: 690px;
+}
+
+#div-8,
+#div-7,
+#div-6{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+#div-8{
+    border: none;
+}
+
+#div-8 img,
+#div-7 img,
+#div-6 img{
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#div-8 div p,
+#div-7 div p,
+#div-6 div p{
+color: gray;
+font-size: 18px;
+margin: 10px 0 10px 0;
+}
+
+#div-8 div:last-child p,
+#div-7 div:last-child p,
+#div-6 div:last-child p{
+    color: black;
+}
+
+#div-8 div:last-child i,
+#div-7 div:last-child i,
+#div-6 div:last-child i{
+    padding: 10px;
+    background-color:#5a1c8f;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#div-4{
+    margin-bottom: 20px;
+}
+
+#div-9{
+    width: 29.15%;
+    display: flex;
+    margin: auto;
+    border: 2px solid #5a1c8f;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+#div-9 h3{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #5a1c8f;
+}
+
+#div-9 h3:hover{
+    background-color: #5a1c8f;
+    border-radius: 50px;
+    color: white;
+}
+
+
+#game{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#game img{
+    width: 150px;
+}
+
+#div-10{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 30px;
+}
+#game h2{
+color: #000555;
+margin-bottom: 10px;
+}
+
+#game div:last-child p{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+#game div:first-child p{
+    color: #5a1c8f;
+    text-align: center;
+    font-weight: bold;
+}
+
+#div-9+p{
+    width: 85%;
+    margin: auto;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#game button{
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.944);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#game h3{
+    color: gray;
+}
+
+#game i{
+    padding: 5px 7px;
+    display: flex;
+    justify-content: flex-end;
+    color: #5a1c8f;
+}
+#div-10+p{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.527);
+}
