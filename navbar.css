@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.097);
+}
+
+#navbar-1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    padding: 5px;
+}
+#navbar-1 div:first-child a{
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid gray;
+    text-decoration: none;
+}
+
+#navbar-1 div:last-child input{
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border-left: 1px solid gray;
+    align-items: center;
+    padding: 13px 10px;
+}
+
+#navbar-1 div:last-child i{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#navbar-2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#navbar-2 div{
+    width: 40%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+   
+}
+#navbar-2 div a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#navbar-2 div a:nth-child(2){
+    color: gray;
+}
+
+#navbar-3{
+width: 80%;
+border-bottom: 1px solid gray;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    padding: 5px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a:hover{
+    text-decoration: underline;
+}
+.nav-links .drop-menu{
+    top: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-links li:hover .drop-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.drop-menu li a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+#link-button a{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#link-button a:first-child{
+    background-color:#00419b;
+    color: white;
+}
+#link-button a:first-child:hover{
+    text-decoration: underline;
+}
+#link-button a:nth-child(2){
+background-color: orange;
+color: black;
+}
+
+#link-button a:nth-child(2):hover,
+#link-button a:last-child:hover{
+    background-color: #00419b;
+    color: white;
+}
+
+#link-button a:last-child{
+    background-color: white;
+    border: 1px solid #00419b;
+}
+
+#main-navbar{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}
+#main-navbar >div{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+#navbar-4{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#navbar-4 img{
+    width: 100px;
+}
+
+#navbar-4 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+#navbar-4 a:hover{
+    text-decoration: underline;
+}
+
+#navbar-4 p{
+    color:  red;
+    font-weight: bold;
+    font-size: 14px;
+}
