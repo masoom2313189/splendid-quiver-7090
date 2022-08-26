@@ -1,8 +1,11 @@
 
 let country= "in"
 let category= "business"
-let url_country = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=43a623f647aa404c955c4ff8d02657ed`
-let url_category = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=43a623f647aa404c955c4ff8d02657ed`
+let sport= "sport"
+let apiKey = "c1eccc14457e4453a138b5f7e6426ae5" //"43a623f647aa404c955c4ff8d02657ed"
+let url_country = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`
+let url_category = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${apiKey}`
+let url_sports= `https://newsapi.org/v2/top-headlines?category=${sport}&apiKey=${apiKey}`
 let articles;
 let getCountryNews= async (url)=>{
     let res= await fetch(url)
@@ -12,24 +15,38 @@ let getCountryNews= async (url)=>{
     part_1_left_breaking_big(articles)
      part_1_left_breaking_mini(articles)
      container_workflow_mumbai(articles)
-     top_sliding_news(articles)
+    //  top_sliding_news(articles)
      left_top(articles)
      explain_left_left(articles)
      explain_left_right(articles)
-    // topPics_News(articles)
+     again_slide(articles)
+     
+     topPics_News(articles)
 }
 let getCategoryNews= async (url)=>{
     let res= await fetch(url)
     let data= await res.json()
     articles= data.articles
-    console.log(articles)
     part_1_right_breaking_mini(articles)
     topPics_News(articles)
     buttom_right(articles)
+    business_left_right(articles)
+    business_left_left(articles)
     
 }
-getCountryNews(url_country)
+
+let getSportsNew= async(url)=>{
+    let res= await fetch(url)
+    let data= await res.json()
+    articles= data.articles
+    sport_left_left(articles)
+     sport_left_right(articles)
+
+   
+}
+ getCountryNews(url_country)
 getCategoryNews(url_category)
+getSportsNew(url_sports)
 
 
 let part_1_left_breaking_big= (data)=>{
@@ -391,3 +408,277 @@ let explain_left_right=(data)=>{
     document.getElementById("explain_left_right").append(maindiv)
     }
 }
+
+let sport_left_left=(data)=>{
+    let random = Math.floor(Math.random()*20+1)
+    let div = document.createElement("div")
+    let img= document.createElement("img")
+    img.src= data[random].urlToImage
+    div.append(img)
+
+    let h1 =document.createElement("h1")
+    h1.innerText= data[random].title
+    let h3= document.createElement("h3")
+    h3.innerText =data[random].author
+    let h5= document.createElement("h5")
+    h5.innerText =data[random].description
+
+document.getElementById("sport_left_left").append(div,h1,h3,h5)
+}
+
+
+let sport_left_right=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","miniNews")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","divText")
+    
+    
+        let img= document.createElement("img")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+    
+        let h3= document.createElement("h3")
+        h3.setAttribute("class","h3")
+        h3.innerText =data[random].title
+    
+    
+        divText.append(h3)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("sport_left_right").append(maindiv)
+    }
+}
+
+
+
+let business_left_left=(data)=>{
+    let random = Math.floor(Math.random()*20+1)
+    let div = document.createElement("div")
+    let img= document.createElement("img")
+    img.src= data[random].urlToImage
+    div.append(img)
+
+    let h1 =document.createElement("h1")
+    h1.innerText= data[random].title
+    let h3= document.createElement("h3")
+    h3.innerText =data[random].author
+    let h5= document.createElement("h5")
+    h5.innerText =data[random].description
+
+document.getElementById("business_left_left").append(div,h1,h3,h5)
+}
+
+
+let business_left_right=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","mumbai_div")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","miniNews")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","divText")
+    
+    
+        let img= document.createElement("img")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+    
+        let h3= document.createElement("h3")
+        h3.setAttribute("class","h3")
+        h3.innerText =data[random].title
+    
+    
+        divText.append(h3)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("business_left_right").append(maindiv)
+    }
+}
+
+
+let imageArray=["https://th-i.thgim.com/public/incoming/ozu0k9/article65797284.ece/alternates/LANDSCAPE_320/K%20Shanker%20Ladies%20Dressmaker%201.jpg","https://th-i.thgim.com/public/incoming/875w9e/article65807270.ece/alternates/LANDSCAPE_320/LOCKDOWN%20CURFEW%20DESERTED%20LOOK%20ROADS%20MARINA%20BEACH%20LIGHT%20HOUSE.jpg","https://th-i.thgim.com/public/incoming/dm5mo3/article65809547.ece/alternates/LANDSCAPE_320/ramesh.jpg"]
+let count= 0
+
+let start = () => {
+
+    let cointainer = document.getElementById('photo_choose')
+    cointainer.innerHTML = null
+    let image = document.createElement('img')
+    setInterval(() => {
+        if (count == imageArray.length) {
+            count = 0
+        }
+        image.src = imageArray[count]
+        cointainer.append(image)
+        count++
+    }, 3000)
+
+}
+start()
+
+
+let again_slide=(data)=>{
+    for(let i=0; i<4; i++){
+        let random = Math.floor(Math.random()*19+1)
+        let maindiv = document.createElement("div")
+        maindiv.setAttribute("class","top_sliding_news_maindiv")
+    
+        let divPhoto = document.createElement("div")
+        divPhoto.setAttribute("class","top_sliding_news_DivPhoto")
+
+        let divText = document.createElement("div")
+        divText.setAttribute("class","top_sliding_news_divText")
+    
+    
+        let img= document.createElement("img")
+        img.setAttribute("class","top_sliding_news_Image")
+        img.src= data[random].urlToImage
+        divPhoto.append(img)
+    
+
+        let opinion= document.createElement("h3")
+        opinion.setAttribute("class","top_sliding_news_opinion")
+        opinion.innerText= data[random].title
+
+        let h5= document.createElement("h5")
+        h5.setAttribute("class","h5")
+        h5.setAttribute("class","top_sliding_news_h5")
+        h5.innerText= data[random].author
+
+        
+        divText.append(opinion,h5)
+        maindiv.append(divPhoto,divText)
+    
+    document.getElementById("again_slide").append(maindiv)
+    }
+}
+
+
+{
+
+/* user defined variables */
+var timeOnSlide = 3, 		
+    // the time each image will remain static on the screen, measured in seconds
+timeBetweenSlides = 1, 	
+    // the time taken to transition between images, measured in seconds
+
+// test if the browser supports animation, and if it needs a vendor prefix to do so
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+if (slidy.style.animationName !== undefined) { animation = true; } 
+// browser supports keyframe animation w/o prefixes
+
+if( animation === false ) {
+  for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
+
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      // get the first image inside the "slidy" element.
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+  slidy.appendChild(imgWrap); // add the clone to the end of the images
+  var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, // work out how wide each image should be in the slidy, as a percentage.
+      position = 0, // set the initial position of the slidy element
+      css = document.createElement("style"); // start marking a new style sheet
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+document.body.appendChild(css); // add the new stylesheet to the end of the document
+}
+
+}
+
+
+{
+    
+
+    $(document).ready(function () {
+        $(".testimonial-carousel").slick({
+            infinite: !0,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: !1,
+            arrows: true,
+            prevArrow: $(".testimonial-carousel-controls .prev"),
+            nextArrow: $(".testimonial-carousel-controls .next"),
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    });
+
+}
+let x=0
+
+let cartoonArray =["https://th-i.thgim.com/public/latest-news/a4y63z/article65807311.ece/alternates/LANDSCAPE_560/OnTheDraw-Aug252022.jpg",
+"https://th-i.thgim.com/public/incoming/c13sd3/article65811185.ece/alternates/LANDSCAPE_560/OnTheDraw.JPG"]
+let cartoon = () => {
+
+    let cointainer = document.getElementById('left_buttom')
+    cointainer.innerHTML = null
+    let image = document.createElement('img')
+    setInterval(() => {
+        if (x == cartoonArray.length) {
+            x = 0
+        }
+        image.src = cartoonArray[x]
+        cointainer.append(image)
+        x++
+    }, 3000)
+
+}
+cartoon()
