@@ -2,7 +2,7 @@
 let country= "in"
 let category= "business"
 let sport= "sport"
-let apiKey = "c1eccc14457e4453a138b5f7e6426ae5" //"43a623f647aa404c955c4ff8d02657ed"
+let apiKey =  "43a623f647aa404c955c4ff8d02657ed" //"c1eccc14457e4453a138b5f7e6426ae5"
 let url_country = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`
 let url_category = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${apiKey}`
 let url_sports= `https://newsapi.org/v2/top-headlines?category=${sport}&apiKey=${apiKey}`
@@ -687,3 +687,50 @@ cartoon()
 
 import footer from "../component/footer.js"
 document.getElementById('footer').innerHTML = footer()
+
+let addImage= ["https://s0.2mdn.net/simgad/10002112593280643179","https://tpc.googlesyndication.com/simgad/17383438564481514811","https://tpc.googlesyndication.com/simgad/3192372604635936197"]
+let addimage= ["https://s0.2mdn.net/simgad/10002112593280643179","https://tpc.googlesyndication.com/simgad/17383438564481514811","https://tpc.googlesyndication.com/simgad/3192372604635936197"]
+
+let y=0
+let add=()=>{
+    let cointainer = document.getElementById('add_right')
+    let container2= document.getElementById('add_left')
+    cointainer.innerHTML = null
+    container2.innerHTML = null
+    let image = document.createElement('img')
+    let image2 = document.createElement('img')
+    setInterval(() => {
+        if (y == addImage.length && y== addimage.length) {
+            y = 0
+        }
+        image.src = addImage[y]
+        image2.src = addimage[y]
+        cointainer.append(image)
+        container2.append(image2)
+        y++
+    }, 5000)
+}
+
+add()
+
+let miniAdd=["https://s0.2mdn.net/simgad/5356890396862228147",
+"https://secure-ds.serving-sys.com/resources/PROD/asset/144375/IMAGE/20220817/Rohit-Scheme__728x90_30_73070565321116846.jpg",
+"https://secure-ds.serving-sys.com/resources/PROD/asset/144375/IMAGE/20220817/Dhoni-Revamp-2022---728x90_30_73070555927972828.jpg",
+"https://secure-ds.serving-sys.com/resources/PROD/asset/144375/IMAGE/20220817/Mall_728-x-90-TVC-August-2021_30_73070561026149548.jpg"] 
+
+let z=0
+let top_add=()=>{
+    let cointainer = document.getElementById('top_add')    
+    cointainer.innerHTML = null 
+    let image = document.createElement('img')
+    setInterval(() => {
+        if (z == miniAdd.length) {
+            z = 0
+        }
+        image.src = miniAdd[z]
+        cointainer.append(image)
+        z++
+    }, 4000)
+}
+
+top_add()

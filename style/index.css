@@ -580,8 +580,8 @@
         .orange-fade {
             width: 100%;
             margin: auto;
-            background: #eae8e8;
-            background: linear-gradient(135deg, #eae8e8 0, #eae8e8 100%); 
+            background: transparent;
+            background: linear-gradient(135deg, transparent 0, transparent 100%); 
         }
 
         .pos-r {
@@ -598,6 +598,7 @@
 
         .text-gray {
             color: #363636;
+            background-color: transparent;
         }
 
         .testimonial {
@@ -1861,15 +1862,6 @@
     border: 0px;
     border-radius: 0px 20px 0px 0px;
 }
-
-
-
-
-
-
-
-
-
 
 
 #view_content_right>div:nth-child(2){
