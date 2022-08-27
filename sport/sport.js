@@ -65,52 +65,52 @@ console.log(dataS)
 
 let dataArt=[
     {
-        heading:"",
+        heading:"Ghei urges clubs and IGU to be proactive in promoting junior golf",
+        para:"Veteran player reminisces on his Chennai connection for more than three decades",
+     },
+     {
+        heading:"Cricket: Why is age a selection criteria, asks Sheldon Jackson",
+        para:"Saurashtra veteran disappointed after being excluded from India-A and",
+     },
+     {
+        heading:"Sarabjot Singh enacts a thrilling finish to top air pistol",
+        para:"The 20-year-old Sarabjot beat former national champion Dharmendra Singh Gaharwar 17-15 after having led 7",
+     },
+     {
+        heading:"Saina Nehwal advances into pre-quarters",
+        para:"Saina, took 38 minutes to dispatch Hong Kong's Ngan Yi 21-19 21-9 in the opening round.",
+     },
+     {
+        heading:"India wins bronze",
         para:"",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Agostini Carracci, Gusty Girl and Aegon please",
+        para:"Pune",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Hyderabad FC asserts its class against Trau in Durand Cup football tournament",
+        para:"East Bengal plays out draw with Indian Navy",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Lagarde for Nizam’s Gold Cup",
+        para:"Hyderabad: The five-year-old horse Lagarde, who is well within himself, should no",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Andrea’s rewards come in plenty",
+        para:"After missing two years with injury, the 16-year-old is now in team for National Games",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Sumit, Rohit bag bronze in wrestling U20 world championships",
+        para:"Rohit Dahiya (82kg), an Asian under-20 bronze medal winner, beat Czech Republic’",
      },
      {
-        heading:"",
-        para:"",
+        heading:"Andrea’s rewards come in plenty ",
+        para:"After missing two years with injury, the 16-year-old is now in team for National Games",
      },
      {
-        heading:"",
-        para:"",
-     },
-     {
-        heading:"",
-        para:"",
-     },
-     {
-        heading:"",
-        para:"",
-     },
-     {
-        heading:"",
-        para:"",
-     },
-     {
-        heading:"",
-        para:"",
+        heading:"Nihal Sarin joins Arjun, Raunak in second spot",
+        para:"Robson in the lead",
      }
     
 

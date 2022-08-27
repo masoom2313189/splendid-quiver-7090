@@ -848,19 +848,13 @@ margin-top: 90px;
     height: 800px;
     /* border: 1px solid teal; */
 }
-#art11{
-    width: 88%;
-    height: 50px;
-    border: 1px solid teal;
-    /* margin-left: 3%; */
-}
 
 #art12{
     width: 96%;
     height: 125px;
     /* border: 1px solid teal; */
     /* margin-left: 3%; */
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
 }
 
