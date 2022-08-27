@@ -3,17 +3,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.thehindu.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>sport</title>
-    <link rel="stylesheet" href="./sport.css">
+    <link rel="stylesheet" href="./sports.css">
+    <link rel="stylesheet" href="./navbar.css">
 </head>
 <body>
-   
+     <div id="navbar"></div>
     <div id="upper">
         <div id="left">
             <img src="https://tpc.googlesyndication.com/simgad/2644252380442787036" >
         </div>
         <div id="middle">
-            <div id="top"></div>
+            <div id="top">
+                <div id="top1">
+                    <h2 id="toph21">SPORT</h2>
+                    <h2 class="toph2">CRICKET</h2>
+                    <h2 class="toph2">FOOTBALL</h2>
+                    <h2 class="toph2">TENNIS</h2>
+                    <h2 class="toph2">HOCKEY</h2>
+                    <h2 class="toph2">ATHLETICS</h2>
+                    <h2 class="toph2">RACES</h2>
+                    <h2 class="toph2">MOTORSPORT</h2>
+                    <h2 class="toph2">OTHER SPORTS</h2>
+                 </div>
+                 <div id="top2">
+                    <div id="top2p">
+                        <p>15 NEW </p>
+                    </div>
+                    <div id="top2h2">
+                        <h2>Sports News</h2>
+                    </div>
+                 </div>
+            </div>
             <div id="mid">
                 <div id="LO">
                     <div id="LO1" style="background-color:white ;">
@@ -454,4 +477,10 @@
         </div>
 </body>
 </html>
-<script src="./sport.js"></script>
+<script type="module">
+    import navbar from "./navbar.js";
+
+    let container = document.getElementById("navbar");
+    container.innerHTML = navbar();
+</script>
+<script src="./sports.js"></script>

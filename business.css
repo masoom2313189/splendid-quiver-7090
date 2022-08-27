@@ -6,7 +6,7 @@
     
 }
 #upper{
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     
@@ -36,23 +36,93 @@
     /* width: 13%; */
     height: auto;
     /* border: 1px solid black; */
-    position: fixed;
-    right: 0px;
+    position: static
+    /* right: 0px; */
+    /* top:0%; */
 }
 #middle>#top{
 width: 97%;
 height: 70px;
-border: 1px solid red;
+/* border: 1px solid red; */
 margin: auto;
-margin-top: 90px;
+margin-top: 9px;
+
 }
+#top1{
+/* border: 1px solid black; */
+height: 30px;
+display: flex;
+background-color: rgb(19,59,90);
+}
+.toph2{
+    background-color: rgb(19,59,90);
+    color: rgb(173, 173, 173);
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 20px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.toph2:hover{
+    text-decoration: underline;
+}
+#toph21{
+    background-color: rgb(8,43,70);
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    /* margin-left: 20px; */
+    padding-top: 3px;
+    cursor: pointer;
+}
+#top2
+{
+    /* border: 1px solid black; */
+    height: 40px;
+    display: flex;
+    
+    
+}
+#top2p{
+    width: 4%;
+    /* border: 1px solid teal; */
+    background-color: red;
+}
+#top2p>p{
+    background-color: red;
+    font-size: 13px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#top2h2{
+    width: 96%;
+    /* border: 1px solid teal; */
+    background-color: rgb(8,43,70);
+}
+#top2h2>h2{
+    background-color: rgb(8,43,70);
+    margin-left: 10px;
+    padding-top: 4px;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#top2h2>h2:hover{
+    text-decoration: underline;
+}
+
+
+
 #mid{
     width: 97%;
     height: auto;
     margin: auto;
     display: flex;
     margin-top: 20px;
-    background-color: white;
+    /* background-color: white; */
 }
 #mid>#LO{
     width: 70%;
@@ -150,11 +220,11 @@ margin-top: 90px;
     text-decoration: underline;
 }
 #adi1{
-    width: 60%;
+    width: 48%;
     height: auto;
     /* border: 1px solid red; */
     margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 #opinion{
     width: 73%;
@@ -163,6 +233,7 @@ margin-top: 90px;
     margin: auto;
     display: flex;
     margin-top: 150px;
+    /* background-color: red; */
 }
 #opinion>#line{
     border-bottom: 1px solid black;
@@ -325,7 +396,8 @@ margin-top: 90px;
     /* border: 1px solid teal; */
     margin: auto;
     display: flex;
-    /* margin-top: 10px; */
+    margin-top: 30px;
+    /* background-color: rgb(245,245,245) ; */
 }
 #market>#marketLine{
     border-bottom: 1px solid black;
@@ -492,7 +564,7 @@ margin-top: 90px;
     /* border: 1px solid teal; */
     margin: auto;
     display: flex;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 #economy>#economyLine{
     border-bottom: 1px solid black;
@@ -656,7 +728,7 @@ margin-top: 90px;
     /* border: 1px solid teal; */
     margin: auto;
     display: flex;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 #industry>#line{
     border-bottom: 1px solid black;
@@ -809,13 +881,15 @@ margin-top: 90px;
 }
 
 
+
+
 #otherAr{
     width: 73%;
     height: auto;
     /* border: 1px solid teal; */
     margin: auto;
     display: flex;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 #otherAr>#line{
     border-bottom: 1px solid black;
