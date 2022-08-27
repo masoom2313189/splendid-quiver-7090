@@ -24,7 +24,7 @@ body{
     width: 70%;
 }
 
-#firstmain>div{
+#firstmain-div{
     display: flex;
     margin-bottom: 20px;
 }
