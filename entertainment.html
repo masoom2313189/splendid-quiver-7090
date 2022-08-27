@@ -9,15 +9,18 @@
     <link rel="shortcut icon" href="https://www.thehindu.com/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
 </head>
 <body>
     <div id="navbar">
 
     </div>
+
+    
     <!-- Entertainment News -->
     <div id="containerEnter">
     <div id="firsthalf">
-        <img src="https://tpc.googlesyndication.com/simgad/3192372604635936197" alt="Error">
+        <!-- <img src="https://tpc.googlesyndication.com/simgad/3192372604635936197" alt="Error"> -->
     </div>
     <div id="main">
         <div id="firstmain">
@@ -79,7 +82,7 @@
         </div>
     </div>
     <div id="lasthalf">
-        <img src="https://tpc.googlesyndication.com/simgad/13915007800155502266" alt="Error">
+        <!-- <img src="https://tpc.googlesyndication.com/simgad/13915007800155502266" alt="Error"> -->
     </div> 
 </div>
 
@@ -495,6 +498,16 @@
     </div>
     </div>
 </div>
+<div id="navbar-4">
+    <p>TRENDING TODAY</p>
+    <a href="#">MONKEYPOX</a>
+    <a href="#">CORONAVIRUS</a>
+    <a href="#">INDIA AT 75</a>
+    <img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="Error">
+</div>
+
+<div id="navbarFirst"></div>
+<div id="footer"></div>
 </body>
 </html>
 <script type="module">
@@ -502,4 +515,25 @@
 
     let container = document.getElementById("navbar");
     container.innerHTML = navbar();
+</script>
+
+<script type="module">
+    import footer from "./footer.js";
+
+    let container = document.getElementById("footer");
+    container.innerHTML = footer();
+</script>
+
+<script type="module">
+    import navbarFirst from "./navbarFirst.js";
+
+    let container = document.getElementById("navbarFirst");
+    container.innerHTML = navbarFirst();
+</script>
+
+<script type="module">
+    import navbarLast from "./navbarLast.js";
+
+    let container = document.getElementById("navbarLast");
+    container.innerHTML = navbarLast();
 </script>

@@ -10,7 +10,7 @@ function navbar() {
             <a href="https://t.me/THnewsupdates"><i class="fa fa-telegram"></i></a>
             <a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa fa-envelope"></i></a>
             <a href="https://www.thehindu.com/social/"><i class="fa fa-mobile-phone"></i></a>
-            <a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage">ePaper</a>
+            <a class="navbar-1-lasta" href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage">ePaper</a>
         </div>
         <div>
             <input type="text" placeholder="Search here" id="search">

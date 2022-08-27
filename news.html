@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./news.css" type="text/css">
     <title>News</title>
+
+    <link rel="shortcut icon" href="https://www.thehindu.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
     
 </head>
-
 <body>
+<div id="navbar"></div>
 <div class="container">
     <nav class="navbar city-menu-wrapper ">
         <div class="city-menu-1">
@@ -198,6 +203,36 @@
     </main>
 
 </div>
+<div id="navbarFirst"></div>
+<div id="footer"></div>
 </body>
  <script src="./news.js"></script>
 </html>
+
+<script type="module">
+    import navbar from "./navbar.js";
+
+    let container = document.getElementById("navbar");
+    container.innerHTML = navbar();
+</script>
+
+<script type="module">
+    import footer from "./footer.js";
+
+    let container = document.getElementById("footer");
+    container.innerHTML = footer();
+</script>
+
+<script type="module">
+    import navbarFirst from "./navbarFirst.js";
+
+    let container = document.getElementById("navbarFirst");
+    container.innerHTML = navbarFirst();
+</script>
+
+<script type="module">
+    import navbarLast from "./navbarLast.js";
+
+    let container = document.getElementById("navbarLast");
+    container.innerHTML = navbarLast();
+</script>
