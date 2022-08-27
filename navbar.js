@@ -31,7 +31,7 @@ function navbar() {
         <div class="wrapper">
             <ul class="nav-links">
                 <i class="fa fa-bars" aria-hidden="true"></i>
-                <li><a href="#">TODAY'S PAPER</a></li>
+                <li><a href="./today.html">TODAY'S PAPER</a></li>
                 <li>
                     <a href="./news.html">NEWS</a>
                         <ul class="drop-menu">
