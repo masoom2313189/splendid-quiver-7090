@@ -1312,7 +1312,7 @@ margin-top: 90px;
 #art11{
     width: 88%;
     height: 50px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     /* margin-left: 3%; */
 }
 
@@ -1321,7 +1321,7 @@ margin-top: 90px;
     height: 125px;
     /* border: 1px solid teal; */
     /* margin-left: 3%; */
-    margin-top: 20px;
+    margin-top: 16px;
     display: flex;
 }
 
