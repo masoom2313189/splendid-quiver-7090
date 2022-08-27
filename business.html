@@ -3,11 +3,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.thehindu.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Business</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./business.css">
+    <link rel="stylesheet" href="./navbar.css">
 
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="upper">
         <div id="left">
             <img src="https://tpc.googlesyndication.com/simgad/4342089702216307386" >
@@ -305,4 +311,11 @@
 
 </body>
 </html>
-<script src="./index.js"></script>
+<script type="module">
+    import navbar from "./navbar.js";
+
+    let container = document.getElementById("navbar");
+    container.innerHTML = navbar();
+</script>
+<script src="./business.js"></script>
+

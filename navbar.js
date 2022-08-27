@@ -33,7 +33,7 @@ function navbar() {
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <li><a href="#">TODAY'S PAPER</a></li>
                 <li>
-                    <a href="#">NEWS</a>
+                    <a href="./news.html">NEWS</a>
                         <ul class="drop-menu">
                         <li><a href="#">INDIA</a></li>
                         <li><a href="#">WORLD</a></li>
@@ -56,7 +56,7 @@ function navbar() {
                 </ul>
                 </li>
                 <li>
-                    <a href="#">BUSINESS</a>
+                    <a href="./business.html">BUSINESS</a>
                         <ul class="drop-menu">
                         <li><a href="#">AGRI-BUSINESS</a></li>
                         <li><a href="#">INDUSTRY</a></li>
@@ -67,7 +67,7 @@ function navbar() {
                 </ul>
                 </li>
                 <li>
-                    <a href="#">SPORTS</a>
+                    <a href="./sports.html">SPORTS</a>
                         <ul class="drop-menu">
                         <li><a href="#">CRIKET</a></li>
                         <li><a href="#">FOOTBALL</a></li>
@@ -80,7 +80,7 @@ function navbar() {
                 </ul>
                 </li>
                 <li>
-                    <a href="#">ENTERTAINMENT</a>
+                    <a href="entertainment.html">ENTERTAINMENT</a>
                         <ul class="drop-menu">
                         <li><a href="#">ART</a></li>
                         <li><a href="#">DANCE</a></li>
@@ -90,7 +90,7 @@ function navbar() {
                         <li><a href="#">THEATRE</a></li>
                 </ul>
                 </li>
-                <li><a href="#">CROSSWORD+</a></li>
+                <li><a href="./crossword.html">CROSSWORD+</a></li>
                 <li><a href="#">SCIENCE</a></li>
             </ul>
         </div>
