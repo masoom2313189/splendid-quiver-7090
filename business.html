@@ -8,6 +8,7 @@
     <title>Business</title>
     <link rel="stylesheet" href="./business.css">
     <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
 
 </head>
 <body>
@@ -328,6 +329,15 @@
     </div>
 </div>
 
+<div id="navbar-4">
+    <p>TRENDING TODAY</p>
+    <a href="#">MONKEYPOX</a>
+    <a href="#">CORONAVIRUS</a>
+    <a href="#">INDIA AT 75</a>
+    <img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="Error">
+</div>
+<div id="navbarFirst"></div>
+<div id="footer"></div>
 </body>
 </html>
 <script type="module">
@@ -336,5 +346,28 @@
     let container = document.getElementById("navbar");
     container.innerHTML = navbar();
 </script>
+
+<script type="module">
+    import footer from "./footer.js";
+
+    let container = document.getElementById("footer");
+    container.innerHTML = footer();
+</script>
+
+<script type="module">
+    import navbarFirst from "./navbarFirst.js";
+
+    let container = document.getElementById("navbarFirst");
+    container.innerHTML = navbarFirst();
+</script>
+
+
+<script type="module">
+    import bottom from "./bottom.js";
+
+    let container = document.getElementById("bottom");
+    // container.innerHTML = bottom();
+</script>
+
 <script src="./business.js"></script>
 

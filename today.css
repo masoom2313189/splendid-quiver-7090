@@ -99,8 +99,8 @@ ul a {
 .content img {
   width: 100%;
 }
+/* For desktop: */
 @media only screen and (min-width: 500px) {
-  /* For desktop: */
   .tpaper-container1 {
     width: 8.33%;
   }

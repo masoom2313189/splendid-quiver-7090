@@ -10,18 +10,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div id="navbar">
 
     </div>
-
+    <div id="middle">
+        <div id="top">
+            <div id="top1">
+                <h2 id="toph21">ENTERTAINMENT</h2>
+                <h2 class="toph2">ART</h2>
+                <h2 class="toph2">DANCE</h2>
+                <h2 class="toph2">MOVIES</h2>
+                <h2 class="toph2">MUSIC</h2>
+                <h2 class="toph2">REVIEWS</h2>
+                <h2 class="toph2">THEATRE</h2>
+             </div>
+             <div id="top2">
+                <div id="top2p">
+                    <p>15 NEW </p>
+                </div>
+                <div id="top2h2">
+                    <h2>Entertainment News</h2>
+                </div>
+             </div>
+        </div>
     
     <!-- Entertainment News -->
     <div id="containerEnter">
     <div id="firsthalf">
         <!-- <img src="https://tpc.googlesyndication.com/simgad/3192372604635936197" alt="Error"> -->
     </div>
+    
     <div id="main">
         <div id="firstmain">
             <div id="enter-1">
@@ -506,10 +530,14 @@
     <img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="Error">
 </div>
 
+<!-- <div id="bottom"></div> -->
 <div id="navbarFirst"></div>
 <div id="footer"></div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./entertainment.js"></script>
+
 <script type="module">
     import navbar from "./navbar.js";
 
@@ -532,8 +560,9 @@
 </script>
 
 <script type="module">
-    import navbarLast from "./navbarLast.js";
+    import bottom from "./bottom.js";
 
-    let container = document.getElementById("navbarLast");
-    container.innerHTML = navbarLast();
+    let container = document.getElementById("bottom");
+    // container.innerHTML = bottom();
 </script>
+

@@ -18,7 +18,7 @@ function navbar() {
         </div>
     </div>
     <div id="navbar-2">
-        <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="Error">
+        <img id="img-navbar-2" src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="Error">
         <div>
             <a href="">LATEST NEWS</a>
             <a href="#">WEDNESDAY, AUGUST 24, 2022</a>

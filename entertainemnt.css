@@ -324,3 +324,83 @@ font-size: bold;
     width: 70%;
     /* display: flex; */
 }
+
+/* upper color navbar */
+
+/* #middle{
+    width: 80%;
+    margin: auto;
+} */
+#middle>#top{
+    width: 75%;
+    height: 70px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 9px;
+    margin-left: 170px;
+    }
+    #top1{
+        /* border: 1px solid black; */
+        height: 30px;
+        display: flex;
+        background-color: crimson;
+        }
+        .toph2{
+            background-color:crimson;
+            color: rgb(173, 173, 173);
+            font-size: 17px;
+            font-weight: 100;
+            margin-left: 20px;
+            padding-top: 3px;
+            cursor: pointer;
+        }
+        .toph2:hover{
+            text-decoration: underline;
+        }
+        #toph21{
+            background-color: crimson;
+            color: white;
+            font-size: 17px;
+            font-weight: 100;
+            padding-left: 9px;
+            padding-top: 3px;
+            cursor: pointer;
+        }
+        #top2
+        {
+            /* border: 1px solid black; */
+            height: 40px;
+            display: flex;
+            
+            
+        }
+        #top2p{
+            width: 4%;
+            /* border: 1px solid teal; */
+            background-color: red;
+        }
+        #top2p>p{
+            background-color: red;
+            font-size: 13px;
+            color: white;
+            margin-left: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        #top2h2{
+            width: 96%;
+            /* border: 1px solid teal; */
+            background-color: #bb173d
+        }
+        #top2h2>h2{
+            background-color: #bb173d;
+            margin-left: 10px;
+            padding-top: 4px;
+            color: white;
+            font-size: 26px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        #top2h2>h2:hover{
+            text-decoration: underline;
+        }
