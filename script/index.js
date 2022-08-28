@@ -629,7 +629,6 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
 
 }
 
-
 {
     
 
@@ -662,6 +661,8 @@ document.body.appendChild(css); // add the new stylesheet to the end of the docu
     });
 
 }
+
+
 let x=0
 
 let cartoonArray =["https://th-i.thgim.com/public/latest-news/a4y63z/article65807311.ece/alternates/LANDSCAPE_560/OnTheDraw-Aug252022.jpg",
